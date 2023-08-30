@@ -8,6 +8,9 @@
 * [Ohjauslaitteen lisääminen Pörssäri-sivustolle](kaeyttoeoenotto-ohjeet/ohjauslaitteen-lisaeaeminen-poerssaeri-sivustolle/README.md)
   * [Shelly-releen lisääminen](kaeyttoeoenotto-ohjeet/ohjauslaitteen-lisaeaeminen-poerssaeri-sivustolle/shelly-releen-lisaeaeminen/README.md)
     * [1. Siirtyminen laitehallintaan](kaeyttoeoenotto-ohjeet/ohjauslaitteen-lisaeaeminen-poerssaeri-sivustolle/shelly-releen-lisaeaeminen/1.-siirtyminen-laitehallintaan.md)
+    * [2. Siirtyminen uuden laitteen lisäyslomakkeelle](kaeyttoeoenotto-ohjeet/ohjauslaitteen-lisaeaeminen-poerssaeri-sivustolle/shelly-releen-lisaeaeminen/2.-siirtyminen-uuden-laitteen-lisaeyslomakkeelle.md)
+    * [3. Uuden laitteen lisäyslomake](kaeyttoeoenotto-ohjeet/ohjauslaitteen-lisaeaeminen-poerssaeri-sivustolle/shelly-releen-lisaeaeminen/3.-uuden-laitteen-lisaeyslomake.md)
+    * [4. Valmista tuli!](kaeyttoeoenotto-ohjeet/ohjauslaitteen-lisaeaeminen-poerssaeri-sivustolle/shelly-releen-lisaeaeminen/4.-valmista-tuli.md)
 
 ## Sivuston ohjeet
 
