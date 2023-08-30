@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Pörssäri-palvelun ohjesivusto](README.md)
+* [📓 Usein kysyttyä](usein-kysyttyae.md)
 
 ## Sivuston ohjeet
 
