@@ -1,4 +1,18 @@
-# Ohjauslaitteen yhteysvahti
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
+# ✅ Ohjauslaitteen yhteysvahti
 
 Pörssäri-sivustolla on mahdollista ottaa käyttöön yhteysvahti, mikä ilmoittaa käyttäjälle mikäli ohjauslaite ei ole yhteydessä palvelimelle käyttäjän määrittelemän ajan sisällä. Normaalitilanteessa laite on yhteydessä palvelimelle noin kahden minuutin välein.
 

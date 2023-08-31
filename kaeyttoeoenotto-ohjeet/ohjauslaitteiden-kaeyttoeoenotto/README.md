@@ -12,5 +12,5 @@ layout:
     visible: false
 ---
 
-# Ohjauslaitteiden käyttöönotto
+# ⏰ Ohjauslaitteiden käyttöönotto
 

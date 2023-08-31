@@ -1,4 +1,18 @@
-# 📪 Aurinkosähkön käyttö
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
+# 🌞 Aurinkosähkön käyttö
 
 Pörssäri tarjoaa mahdollisuuden aurinkosähkön tuottoennusteen hyödyntämiseen ohjattavien laitteiden ohjauksessa. Älykäs taustalogiikka huolehtii siitä, että vuorokauden sisällä sähkön kokonaiskustannus on käyttäjälle mahdollisimman edullinen.
 
