@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Pörssäri-palvelun ohjesivusto](README.md)
+* [🔌 Pörssäri-palvelun ohjesivusto](README.md)
 * [📓 Tietoa Pörssäristä](tietoa-poerssaeristae.md)
 
 ## Käyttöönotto-ohjeet
@@ -23,3 +23,13 @@
   * [1. Kiinteistön lisääminen](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/1.-kiinteistoen-lisaeaeminen.md)
   * [2. Aurinkovoimalan lisääminen](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/2.-aurinkovoimalan-lisaeaeminen.md)
   * [3. Ohjauslaitteen asetukset](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/3.-ohjauslaitteen-asetukset.md)
+
+## Yhteysvahti
+
+* [Ohjauslaitteen yhteysvahti](yhteysvahti/ohjauslaitteen-yhteysvahti.md)
+* [Telegram-yhteysvahdin käyttöönotto](yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/README.md)
+  * [1. Yhteysvahdin avaaminen Telegram-sovellukseen](yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/1.-yhteysvahdin-avaaminen-telegram-sovellukseen.md)
+  * [2. Yhteysvahdin käynnistäminen](yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/2.-yhteysvahdin-kaeynnistaeminen.md)
+  * [3. Käyttäjätunnuksen lisääminen](yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/3.-kaeyttaejaetunnuksen-lisaeaeminen.md)
+  * [4. Yhteysvahdin aktivointi omalle laitteelle](yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/4.-yhteysvahdin-aktivointi-omalle-laitteelle.md)
+  * [5. Valmista tuli](yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/5.-valmista-tuli.md)

@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 👋 Pörssäri-palvelun ohjesivusto
+# 🔌 Pörssäri-palvelun ohjesivusto
 
 Pörssäri on helppokäyttöinen ohjauspalvelu kodin sähkölaitteiden hintaohjaukseen pörssisähkön hinnan sekä aurinkopaneeleiden tuotannon perusteella. Sivuston ohjaus on mahdollista välittää useiden eri ohjauslaitteiden kautta.&#x20;
 
