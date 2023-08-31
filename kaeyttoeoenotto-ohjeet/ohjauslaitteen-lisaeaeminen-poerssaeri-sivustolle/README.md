@@ -1,2 +1,0 @@
-# Ohjauslaitteen lisääminen Pörssäri-sivustolle
-
