@@ -14,19 +14,11 @@ layout:
 
 # 📓 Muita kysymyksiä ja vastauksia
 
-### Sopiiko Pörssäri minun käyttötarkoitukseen?
-
-Pörssärin käyttö vaatii hieman osaamista releohjauksen käyttöönottamiseksi. Ohjelmointitaitoa ei tarvita. Kuvalliset ohjeet Pörssärin ohjauksen käyttöönotosta löytyvät "Ohjeet" -valikosta.
-
-Releohjauksen asentamiseksi tarvitset sähköasentajan kytkemään ohjattavat laitteet "älyreleen" taakse.
-
-Shelly-releen asetukset tulee kertaalleen asennuksen yhteydessä tehdä mobiililaitteen tai kannettavan tietokoneen avulla. Jatkossa asetuksia muutetaan Pörssäri-sivustolta.
-
-Ensimmäisellä käyttökerralla Shelly-rele yhdistetään kotiverkkoon ja laitteeseen haetaan Pörssärin ohjelmakirjastosta ohjauskäytössä tarvittavat ohjelmakoodit. Ohjelmakoodeihin käyttäjän ei tarvitse eikä tule tehdä muutoksia. Lisäksi laite tulee lisätä Pörssäri-sivustolla käyttäjän omaan laitetietokantaan Shellyn laitetunnistetta käyttäen.&#x20;
-
 ### Onko Pörssäri luotettava palvelu?
 
-Pörssäri on harrastepohjalta rakennettu palvelu, joka on ensisijaisesti tehty omiin käyttötarpeisiin. Emme tarjoa suoraa asiakastukea, mutta ongelmatilanteita mahdollisuuksien mukaan pyritään ratkaisemaan yhteistyössä käyttäjien kanssa. Pörssäri on käyttäjälle maksuton nyt ja aina tulevaisuudessa.
+Pörssäri on harrastepohjalta rakennettu palvelu, joka on ensisijaisesti tehty omiin käyttötarpeisiin. Emme tarjoa suoraa asiakastukea, mutta ongelmatilanteita mahdollisuuksien mukaan pyritään ratkaisemaan yhteistyössä käyttäjien kanssa. Ongelmatilanteiden varalle sivustolta löytyy yhteydenottolomake, ja lisäksi tukea voi pyytää sähköpostitse osoitteesta info(at)porssari.fi.&#x20;
+
+Pörssäri on käyttäjälle maksuton nyt ja aina tulevaisuudessa.
 
 ### Mistä sähkön hintatiedot haetaan?
 
@@ -68,9 +60,13 @@ Pörssärin laite- ja käyttäjätietokanta sijaitsevat Hostingpalvelu-palvelunt
 
 ### Mitä tietoja minusta kerätään?
 
-Pörssäri kerää käyttäjältä rekisteriinsä pakollisina tietoina sähköpostiosoitteen, ip-osoitteen mistä käyttäjän laite hakee ohjauksia sekä käyttäjän laitetunnuksen. Lisäksi käyttäjä voi lisätä oman nimensä palveluun. Älykkään lämmityslaiteohjauksen ja aurinkosähköennusteen käyttämiseksi käyttäjän tulee syöttää ohjattavan kiinteistön sijaintitiedot paikallisen sääennustedatan hakemisen mahdollistamiseksi. Käyttäjätiedot ja ohjaustiedot sijaitsevat toisistaan erillisissä tietokannoissa eikä ohjaustietokannassa säilytetä käyttäjän tunnistetietoja.
+Pörssäri kerää käyttäjältä rekisteröityessä pakollisina tietoina sähköpostiosoitteen, sekä lisäksi käyttäjä voi lisätä oman nimensä palveluun.&#x20;
 
-Shelly-laitteen tunnisteena käytetään automaattisesti Shellyn laitetunnistetta. Käyttäjän ip-osoitetta käytetään palvelinkyselyiden määrän hallinnassa.
+Älykkään lämmityslaiteohjauksen ja aurinkosähköennusteen käyttämiseksi käyttäjän tulee syöttää ohjattavan kiinteistön sijaintitiedot paikallisen sääennustedatan hakemisen mahdollistamiseksi. Käyttäjätiedot ja ohjaustiedot sijaitsevat toisistaan erillisissä tietokannoissa eikä ohjaustietokannassa säilytetä käyttäjän tunnistetietoja.
+
+Shelly-laitteen tunnisteena käytetään automaattisesti Shellyn laitetunnistetta. Kyselyn suorittavan laitteen julkinen ip-osoite tallennetaan tietokantaan ja sitä käytetään palvelinkyselyiden määrän hallinnassa.
+
+Mikäli käytössä on Telegram-yhteysvahti, käyttäjän Telegram-palveluun tallentama etunimi tallennetaan tietokantaan.
 
 ### Saako palvelua käyttää VPN-yhteyden tai välityspalvelimen kautta?
 
