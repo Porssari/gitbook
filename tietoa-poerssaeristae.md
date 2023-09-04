@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 📓 Tietoa Pörssäristä
+# 📓 Muita kysymyksiä ja vastauksia
 
 ### Sopiiko Pörssäri minun käyttötarkoitukseen?
 
