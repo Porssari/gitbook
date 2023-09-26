@@ -1,5 +1,16 @@
 ---
 description: Oppaan tekstit ja kuvat koonnut Harri Perämäki
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # Shelly-ohjausskriptin päivitys
