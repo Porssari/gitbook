@@ -14,6 +14,10 @@ layout:
 
 # ⏰ Ohjauslaitteiden käyttöönotto
 
-[home-assistant-ohjauksen-lisaeaeminen](home-assistant-ohjauksen-lisaeaeminen/ "mention")
+{% content-ref url="home-assistant-ohjauksen-lisaeaeminen/" %}
+[home-assistant-ohjauksen-lisaeaeminen](home-assistant-ohjauksen-lisaeaeminen/)
+{% endcontent-ref %}
 
-[shelly-ohjauksen-lisaeaeminen](shelly-ohjauksen-lisaeaeminen/ "mention")
+{% content-ref url="shelly-ohjauksen-lisaeaeminen/" %}
+[shelly-ohjauksen-lisaeaeminen](shelly-ohjauksen-lisaeaeminen/)
+{% endcontent-ref %}

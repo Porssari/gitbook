@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # Shelly-ohjauksen lisääminen
 
 Tämän oppaan avulla saat lisättyä laitteesi Pörssäri-tilille.
@@ -6,6 +20,12 @@ Yhdistä ensin Shelly-rele kotiverkkoosi. Voit tehdä sen joko Shelly Smart Cont
 
 Oppaan läpikäymiseksi sinulla tulee olla tiedossa Shellyn ns. IP-osoite omassa kotiverkossa sekä Shellyn laitetunnus.
 
-[laitteen-lisaeaeminen-poerssaeri-sivustolle](laitteen-lisaeaeminen-poerssaeri-sivustolle/ "mention")
 
-[ohjausskriptin-lisaeaeminen-shelly-laitteeseen](ohjausskriptin-lisaeaeminen-shelly-laitteeseen/ "mention")
+
+{% content-ref url="laitteen-lisaeaeminen-poerssaeri-sivustolle/" %}
+[laitteen-lisaeaeminen-poerssaeri-sivustolle](laitteen-lisaeaeminen-poerssaeri-sivustolle/)
+{% endcontent-ref %}
+
+{% content-ref url="ohjausskriptin-lisaeaeminen-shelly-laitteeseen/" %}
+[ohjausskriptin-lisaeaeminen-shelly-laitteeseen](ohjausskriptin-lisaeaeminen-shelly-laitteeseen/)
+{% endcontent-ref %}

@@ -14,3 +14,8 @@ layout:
 
 # 🔃 Ohjauslaitteiden päivitys
 
+
+
+{% content-ref url="shelly-ohjausskriptin-paeivitys/" %}
+[shelly-ohjausskriptin-paeivitys](shelly-ohjausskriptin-paeivitys/)
+{% endcontent-ref %}
