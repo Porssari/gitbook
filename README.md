@@ -6,7 +6,7 @@ layout:
     visible: true
     size: hero
   title:
-    visible: true
+    visible: false
   description:
     visible: false
   tableOfContents:
@@ -19,7 +19,7 @@ layout:
 
 # 🔌 Pörssärin ohjesivusto
 
-Pörssäri on helppokäyttöinen ohjauspalvelu kodin sähkölaitteiden hintaohjaukseen pörssisähkön hinnan sekä tarvittaessa myös aurinkopaneeleiden tuotannon perusteella. Sivuston ohjaus on mahdollista välittää useiden eri ohjauslaitteiden kautta. Pörssäri automatisoi sähkön käytön käyttäjän tekemien asetusten perusteella vuorokauden edullisimmille tunneille.
+Pörssäri on helppokäyttöinen ohjauspalvelu kodin sähkölaitteiden hintaohjaukseen pörssisähkön hinnan sekä tarvittaessa myös aurinkopaneeleiden tuotannon perusteella. Lokakuun 2023 aikana julkaistaan lisäksi ulkolämpötilaan perustuva lämmityksen ohjausmahdollisuus. Sivuston ohjaus on mahdollista välittää useiden eri ohjauslaitteiden kautta. Pörssäri automatisoi sähkön käytön käyttäjän tekemien asetusten perusteella vuorokauden edullisimmille tunneille.
 
 Pörssärin käyttöönotto onnistuu helpoiten Shelly-älyreleen avulla. Yhteensopivia malleja ovat Shelly Plus -mallin releet (1, 1PM, 2PM, mielellään ei PM-malleja kontaktoriohjaukseen) sekä Pro-mallin releet (mieluiten Pro1, Pro2 tai Pro3, myös Pro4PM, mutta mielellään ei PM-malleja kontaktoriohjaukseen). Lisäksi tarvitset sähköasentajan kytkemään Shellyn paikalleen.&#x20;
 
