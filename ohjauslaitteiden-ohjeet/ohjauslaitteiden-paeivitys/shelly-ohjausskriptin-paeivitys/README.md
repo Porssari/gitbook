@@ -1,5 +1,5 @@
 ---
-description: Oppaan tekstit ja kuvat koonnut Harri Perämäki
+description: Oppaan tekstit ja kuvat koottu yhdessä yhteisön jäsenen apua käyttäen.
 layout:
   title:
     visible: true
