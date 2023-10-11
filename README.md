@@ -23,6 +23,6 @@ Pörssäri on helppokäyttöinen ohjauspalvelu kodin sähkölaitteiden hintaohja
 
 Pörssärin käyttöönotto onnistuu helpoiten Shelly-älyreleen avulla. Yhteensopivia malleja ovat Shelly Plus -mallin releet (1, 1PM, 2PM, mielellään ei PM-malleja kontaktoriohjaukseen) sekä Pro-mallin releet (mieluiten Pro1, Pro2 tai Pro3, myös Pro4PM, mutta mielellään ei PM-malleja kontaktoriohjaukseen). Lisäksi tarvitset sähköasentajan kytkemään Shellyn paikalleen.&#x20;
 
-Nimestään huolimatta yksi luotettava verkkokauppa Shellyn hankkimiseksi on [Nurkan Takaa -verkkokauppa.](https://verkkokauppa.nurkantakaa.fi/) Kaupan omistaja Teemu Räikkönen on tunnettu Facebookin suomenkielisen Shelly -tukiryhmän ylläpitämisestä.
+Luotettavia suomalaisia verkkokauppoja Shellyn hankintaan ovat sekä [Shellykauppa.fi](https://shellykauppa.fi) että [Nurkan Takaa -verkkokauppa.](https://verkkokauppa.nurkantakaa.fi/)
 
 Shellyn lisäksi tällä hetkellä tuettuna on Home Assistant sekä Raspberry Pico W -releohjaus Micropython-pohjaisella järjestelmällä. Pörssärin ohjaustieto lähetetään asiakaslaitteeseen taustapalvelimelta JSON-muodossa siten, että laitteen ohjauskanavalle kerrotaan senhetkinen ohjaustila sekä aikataulu tilanmuutoksista niin pitkään kuin hintatietoa on saatavilla. Mikäli haluat käyttää omaa ohjauslaitetta Pörssärin ohjaustiedon välittämiseen sähkölaitteille, tutustu ohjesivuston "Kehittäjille" -osioon.
