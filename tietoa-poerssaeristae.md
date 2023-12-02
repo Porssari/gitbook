@@ -16,9 +16,9 @@ layout:
 
 ### Onko Pörssäri luotettava palvelu?
 
-Pörssäri on harrastepohjalta rakennettu palvelu, joka on ensisijaisesti tehty omiin käyttötarpeisiin. Emme tarjoa suoraa asiakastukea, mutta ongelmatilanteita mahdollisuuksien mukaan pyritään ratkaisemaan yhteistyössä käyttäjien kanssa. Ongelmatilanteiden varalle sivustolta löytyy yhteydenottolomake, ja lisäksi tukea voi pyytää sähköpostitse osoitteesta info(at)porssari.fi.&#x20;
+Pörssäri on harrastepohjalta rakennettu palvelu, joka on ensisijaisesti tehty omiin käyttötarpeisiin. Emme lupaa suoraa asiakastukea, mutta ongelmatilanteita pyritään mahdollisuuksien mukaan ratkaisemaan yhteistyössä käyttäjien kanssa. Ongelmatilanteiden varalle sivustolta löytyy yhteydenottolomake, ja lisäksi tukea voi pyytää sähköpostitse osoitteesta info(at)porssari.fi.&#x20;
 
-Pörssäri on käyttäjälle maksuton nyt ja aina tulevaisuudessa.
+Pörssäri on käyttäjälle maksuton kaikkien käytettävissä olevien ominaisuuksien osalta nyt ja aina tulevaisuudessa.
 
 ### Mistä sähkön hintatiedot haetaan?
 

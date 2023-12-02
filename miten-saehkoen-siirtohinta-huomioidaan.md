@@ -14,6 +14,6 @@ layout:
 
 # ❓ Miten sähkön siirtohinta huomioidaan?
 
-Pörssäri tarjoaa mahdollisuuden omien hintatietojen tallennukseen. Tämä koskee erityisesti sellaisia kotitalouksia missä sähkön siirtohinta vaihtelee, eli käytössä on joko aikatariffi tai kausitariffi. 
+Käyttäjä voi määrittää Pörssärin sivustolla sähkön siirtohinnan, sähköveron sekä pörssisähkön marginaalin. Tällaisessa tilanteessa ohjaukset tehdään käyttäjän kokonaishintaan perustuen.&#x20;
 
-Mikäli käyttäjä on lisännyt sivustolle omat hinta-asetukset, lasketaan jokaisen tunnin hinta sekä spot-hinnan että oman siirtohinnan mukaan. Tämä saattaa muuttaa tuntien kokonaishintaa ja siirtää esimerkiksi aiemmin yösähköllä tehtyä lämmitystä myös päivän edullisemmille tunneille.
+Kokonaishinnan käyttö on tarpeen tilanteissa missä sähkön siirtohinta vaihtelee, eli käytössä on joko aikatariffi tai kausitariffi. Tällaisessa tilanteessa kokonaishinnaltaan edullisempia tunteja saattaa olla myös kalliimman siirtohinnan aikana.

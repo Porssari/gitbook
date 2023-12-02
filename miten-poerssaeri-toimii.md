@@ -8,7 +8,7 @@ Ohjaustieto lähetetään laitteeseen:
 * kun käyttäjäasetuksia muutetaan
 * mikäli edellisestä ohjaustiedon lähettämisestä on kulunut yli tunti aikaa.
 
-Tavanomaisiin ns. pilvipalveluihin tai muihin Shellyn ohjausskripteihin verrattuna Pörssärin ohjausohjelma ei vaadi jatkuvaa internet-yhteyttä. Ihannetilanteessa ohjaustietoa tallennetaan vastaanottavaan laitteeseen noin 30h eteenpäin kun seuraavan päivän hintatiedot on NordPoolin toimesta julkaistu.
+Tavanomaisiin ns. pilvipalveluihin tai muihin Shellyn ohjausskripteihin verrattuna Pörssärin ohjaus ei vaadi jatkuvaa internet-yhteyttä. Ohjaustieto talletetaan paikalliseen muistiin aina koko sähkön hintatietojen ajaksi, eli vähintään kuluvan vuorokauden loppuun saakka.
 
 Käyttäjäasetuksia voidaan muuttaa mistä tahansa sijainnista internet-yhteyden välityksellä. Pörssärin kautta ei kuitenkaan ole pääsyä käyttäjän kotiverkkoon, sillä ohjaustieto palautetaan vastauksena ohjauslaitteen suorittamaan kyselyyn. Pörssäri ei tarvitse toimiakseen Shellyn Cloud -ominaisuutta, mutta sen käytölle ei myöskään ole mitään estettä.
 
