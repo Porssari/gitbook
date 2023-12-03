@@ -15,7 +15,8 @@
   * [2. Aurinkovoimalan lisääminen](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/2.-aurinkovoimalan-lisaeaeminen.md)
   * [3. Ohjauslaitteen asetukset](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/3.-ohjauslaitteen-asetukset.md)
 * [🌡 Lämmityksen ohjaus](sivuston-ohjeet/laemmityksen-ohjaus/README.md)
-  * [Page](sivuston-ohjeet/laemmityksen-ohjaus/page.md)
+  * [Toimintaperiaate](sivuston-ohjeet/laemmityksen-ohjaus/toimintaperiaate.md)
+  * [Page 1](sivuston-ohjeet/laemmityksen-ohjaus/page-1.md)
 
 ## Ohjauslaitteiden ohjeet
 
