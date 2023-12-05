@@ -43,6 +43,6 @@ Mikäli haluat määrittää itse lämmityksen päälläolotunnit 0 ja -10 astee
 Voit lisäksi määrittää jakson keskilämpötilan mikä alapuolella mukavuuslämmitysjärjestelmä on aktiivinen.
 
 {% hint style="info" %}
-Mukavuuslämmitysjärjestelmän lämmitystarve arvioidaan 0 ja -10 asteen kytkentätuntien perusteella. Mikäli esimerkiksi 0 asteessa tarve on 4h ja -10 asteessa 8h, lasketaan -5 asteessa päälläolotarpeeksi 6h.
+Mukavuuslämmitysjärjestelmän lämmitystarve arvioidaan 0 ja -10 asteen kytkentätuntien perusteella. Mikäli esimerkiksi 0 asteessa tarve on 4h ja -10 asteessa 8h, lasketaan -5 asteessa päälläolotarpeeksi 6h. Mukavuuslämmitys kytketään päälle periodeittain kiinteistön lämmönvarauskyvyn perusteella.
 {% endhint %}
 
