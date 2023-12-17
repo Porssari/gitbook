@@ -14,6 +14,8 @@ layout:
 
 # Rajapintakuvaus
 
+## Versio 1
+
 Lähtökohtaisesti Pörssärin rajapinta on HTTP GET osoitteeseen *https://api.porssari.fi/getcontrols.php*, kahdella parametrillä:
 
 * device_mac: laitteen MAC-osoite isoilla kirjaimilla ja ilman muita merkkejä, esim A1B2C3D4E5F6
@@ -67,3 +69,43 @@ Palvelin vastaa tavallisesti JSON objektilla:
 Tässä esimerkissä kanavien lukumäärä on yksi.
 
 Kellonajat ovan suomen aikaa paitsi Timestamp joka UTC ja johon voi lisätä Timestamp_offset että on suomen ajassa.
+
+## Versio 2
+
+Pörssärin rajapinta on HTTP GET osoitteeseen *https://api.porssari.fi/getcontrols.php*, kolmella parametrillä:
+
+* device_mac: laitteen MAC-osoite isoilla kirjaimilla ja ilman muita merkkejä, esim A1B2C3D4E5F6
+* client: käyttäjön skriptin nimi ja versio
+* json_version=2 : käytä API versio 2:ta
+
+Eli esimerkiksi: https://api.porssari.fi/getcontrols.php?device_mac=A1B2C3D4E5F6&client=documentation-example-1&json_version=2
+
+Palvelin vastaa JSON objektilla:
+
+```json
+{
+  "metadata": {
+    "mac": "A1B2C3D4E5F6",
+    "channels": "1",
+    "fetch_url": "https://api.porssari.fi/getcontrols.php",
+    "timestamp": "1702821684",
+    "timestamp_offset": "7200",
+    "valid_until": "1702940100"
+  },
+  "controls": [
+    {
+      "id": "1",
+      "name": "examplename",
+      "updated": "1702708849",
+      "state": "0",
+      "schedules": [
+        { "timestamp": "1702850368", "state": "1" },
+        { "timestamp": "1702853976", "state": "0" },
+        { "timestamp": "1702857522", "state": "1" },
+        { "timestamp": "1702875674", "state": "0" },
+        { "timestamp": "1702936868", "state": "1" }
+      ]
+    }
+  ]
+}
+```
