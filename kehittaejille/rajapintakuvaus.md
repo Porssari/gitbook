@@ -12,11 +12,11 @@ layout:
     visible: false
 ---
 
-# Rajapintakuvaus
+# 🖥 Rajapintakuvaus
 
 ## Versio 2 (current)
 
-Pörssärin rajapinta on HTTP GET osoitteeseen _https://api.porssari.fi/getcontrols.php_, neljällä parametrillä:
+Pörssärin rajapinta on HTTP GET osoitteeseen _https://api.porssari.fi/getcontrols.php_, neljällä pakollisella parametrillä:
 
 * device\_mac: laitteen MAC-osoite isoilla kirjaimilla ja ilman muita merkkejä, esim A1B2C3D4E5F6
 * last\_request: edellisen JSON-ohjaustiedon aikaleima (UNIX-timestamp -muodossa, 0 mikäli ohjaustietoa ei ole tallennettu laitteeseen)
@@ -66,7 +66,7 @@ Muussa tapauksessa palvelin vastaa JSON-objektilla:
 
 Legacy-rajapinta vastaa ohjaustilan tuntitasolla. Mikäli käytössä on ohjaustila mikä annetaan 15min resoluutiolla (esimerkiksi lämmitysohjaus), rajapinta palauttaa tunnin arvoksi kyseisen tunnint ensimmäisen 15 minuutin ajanjakson ohjaustilan.
 
-Lähtökohtaisesti Pörssärin rajapinta on HTTP GET osoitteeseen _https://api.porssari.fi/getcontrols.php_, kolmella parametrillä:
+Lähtökohtaisesti Pörssärin rajapinta on HTTP GET osoitteeseen _https://api.porssari.fi/getcontrols.php_, kolmella pakollisella parametrillä:
 
 * device\_mac: laitteen MAC-osoite isoilla kirjaimilla ja ilman muita merkkejä, esim A1B2C3D4E5F6
 * last\_request: edellisen JSON-ohjaustiedon aikaleima (UNIX-timestamp -muodossa, 0 mikäli ohjaustietoa ei ole tallennettuna laitteeseen)
