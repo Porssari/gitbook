@@ -61,6 +61,6 @@
     * [4. Yhteysvahdin aktivointi omalle laitteelle](yhteysvahti/ohjauslaitteen-yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/4.-yhteysvahdin-aktivointi-omalle-laitteelle.md)
     * [5. Valmista tuli](yhteysvahti/ohjauslaitteen-yhteysvahti/telegram-yhteysvahdin-kaeyttoeoenotto/5.-valmista-tuli.md)
 
-## 🖥 Kehittäjille
+## Kehittäjille
 
-* [Rajapintakuvaus](kehittaejille/rajapintakuvaus.md)
+* [🖥 Rajapintakuvaus](kehittaejille/rajapintakuvaus.md)
