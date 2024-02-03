@@ -46,7 +46,7 @@ Pörssäri ei tarvitse eikä halua saada käyttöoikeutta käyttäjän Shelly Cl
 
 Pörssärin ohjausohjelma huomioi toiminnassaan ainoastaan ne Shellyn kanavat, joiden tila on Pörssärin asetuksissa jokin muu kuin "ei käytössä". Voit siis käyttää osaa ohjauskanavista Shelly-releessä muihin tarkoituksiin, eikä Pörssärin ohjausohjelma ohjaa näitä kanavia.
 
-Mikäli huomaat lyhyen kokeilun jälkeen, että Pörssäri ei ole sopiva omiin käyttötarpeisiisi, on Shelly-releille tarjolla useita muitakin ohjausmahdollisuuksia. Tällaisia ovat esimerkiksi erinomainen rajapinta [www.spot-hinta.fi](http://spot-hinta.fi/). Lisäksi Shelly-relettä on mahdollista käyttää esimerkiksi ohjelmoitavana kellokytkimenä sellaisenaan.
+Mikäli huomaat lyhyen kokeilun jälkeen, että Pörssäri ei ole sopiva omiin käyttötarpeisiisi, on Shelly-releille tarjolla useita muitakin kolmannen osapuolen pörssisähköohjauspalveluita. Lisäksi Shelly-relettä on mahdollista käyttää esimerkiksi ohjelmoitavana kellokytkimenä sellaisenaan.
 
 ### Onko Pörssärin käyttö maksullista?
 
@@ -56,7 +56,9 @@ Pörssärin käyttö on nyt ja tulevaisuudessa maksutonta. Kyseessä on harraste
 
 Sivuston ja laitetietokannan hallinnassa käytetään parhaita mahdollisia tietoturvakäytäntöjä. Ylläpitäjien käyttäjätilit on suojattu 2-vaiheisella tunnistautumisella. Myös käyttäjien on mahdollista ottaa käyttäjäprofiilin asetuksissa 2-vaiheinen tunnistautuminen itselleen käyttöön Google Authenticator -sovellukseen perustuen. Pörssärin asetushallinta sekä käyttäjänhallinta perustuvat turvalliseen avoimen lähdekoodin Joomla-sisällönhallintajärjestelmän uusimpaan versioon.
 
-Pörssärin laite- ja käyttäjätietokanta sijaitsevat Hostingpalvelu-palveluntuottajan palvelimilla. Hostingpalvelu vastaa omien palvelimiensa tietoturvasta.
+Palvelimelta ei ole yhteyttä käyttäjän kotiverkossa oleviin laitteisiin suoraan, vaan ne hakevat ohjaustiedon REST-json -rajapintaa käyttäen.
+
+Ulkoisten ohjauspalvelinten käyttäjätunnukset, salasanat ja api-tunnisteet säilytetään Pörssärin ohjaustietokannassa vahvasti salattuina.
 
 ### Mitä tietoja minusta kerätään?
 
