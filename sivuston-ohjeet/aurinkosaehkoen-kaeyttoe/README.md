@@ -18,6 +18,6 @@ Pörssäri tarjoaa mahdollisuuden aurinkosähkön tuottoennusteen hyödyntämise
 
 Aurinkosähköennuste haetaan forecast.solar -palvelusta käyttäjän syöttämien koordinaattien mukaisesti. Aurinkoennuste päivitetään kuluvaa vuorokautta seuraavasta päivästä eteenpäin jotta jo toteutettuihin ohjauksiin ei tulisi muutoksia aurinkoennusteen päivittyessä.
 
-Laitehallinnan asetuksissa valitaan tuntimäärä mikä aurinkosähköä hyödyntävän laitteen halutaan olevan kytkettynä. Kyseinen tuntimäärä kytketään aina vuorokauden sisällä päälle aurinkoennusteesta huolimatta. Mikäli aurinkopaneelit eivät tuota ollenkaan, kytketään vuorokauden edullisimmat tunnit päälle.
+Ohjauskuorman asetuksissa halutaan haluttu tuntimäärä vuorokaudessa aurinkosähköä hyödyntävälle ohjaukselle. Kyseinen tuntimäärä kytketään aina vuorokauden sisällä päälle aurinkoennusteesta huolimatta. Mikäli aurinkopaneelit eivät tuota ollenkaan, kytketään vuorokauden edullisimmat tunnit päälle.
 
-Aurinkosähköennusteen käyttö edellyttää hinta-asetusten tekemistä sivustolle. Huomioithan siirtotariffissa myös sähköveron osuuden!
+Aurinkosähköohjaus vaatii toimiakseen kiinteistöön lisätyt aurinkovoimalat. Lisäksi hintalaskennan onnistumiseksi on tärkeää lisätä kiinteistölle mukautetut hinta-asetukset sähkön kokonaishinnan laskemista varten.
