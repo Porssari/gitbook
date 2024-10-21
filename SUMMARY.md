@@ -8,8 +8,10 @@
 
 ## Sivuston ohjeet
 
-* [💡 Aika- ja hintaohjaus](sivuston-ohjeet/aika-ja-hintaohjaus/README.md)
-  * [Ohjeita ohjausasetusten tekoon](sivuston-ohjeet/aika-ja-hintaohjaus/ohjeita-ohjausasetusten-tekoon.md)
+* [➡️ Kuinka pääsen alkuun?](sivuston-ohjeet/aika-ja-hintaohjaus/README.md)
+  * [Kiinteistön lisääminen sekä asetukset](sivuston-ohjeet/aika-ja-hintaohjaus/kiinteiston-lisaaminen-seka-asetukset.md)
+  * [Kiinteistön ohjausasetukset](sivuston-ohjeet/aika-ja-hintaohjaus/kiinteiston-ohjausasetukset.md)
+  * [Ohjauslaiteliitokset](sivuston-ohjeet/aika-ja-hintaohjaus/ohjauslaiteliitokset.md)
 * [🌞 Aurinkosähkön käyttö](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/README.md)
   * [1. Kiinteistön lisääminen](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/1.-kiinteistoen-lisaeaeminen.md)
   * [2. Aurinkovoimalan lisääminen](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/2.-aurinkovoimalan-lisaeaeminen.md)
