@@ -14,7 +14,7 @@ Mikäli ohjatut lämmitysjärjestelmät lämmittävät tasaisesti liikaa tai lii
 
 ### Erilaiset lämmitysjärjestelmät
 
-Kiinteistöön on mahdollista lisätä tyypiltään kolmea erilaista lämmitysjärjestelmää. Nämä ovat "Päälämmitysjärjestelmä", "Avustava lisälämmitysjärjestelmä" sekä "Mukavuuslämmitysjärjestelmä".&#x20;
+Kiinteistöön on mahdollista lisätä tyypiltään kolmea erilaista lämmitysjärjestelmää. Nämä ovat "Päälämmitysjärjestelmä", "Avustava lisälämmitysjärjestelmä" sekä "Mukavuuslämmitysjärjestelmä".
 
 #### Päälämmitysjärjestelmä (lasketaan lämmitystarpeen perusteella)
 
@@ -38,11 +38,12 @@ Mikäli et ohjaa päälämmönlähteenä olevaa lämpöpumppua Pörssärillä, m
 
 #### Mukavuuslämmitysjärjestelmä (ei vaikuta kiinteistön lämmitystarpeen arviointiin)
 
-Mikäli haluat määrittää itse lämmityksen päälläolotunnit 0 ja -10 asteessa, voit lisätä lämmityslaitteen "Mukavuuslämmitysjärjestelmänä". Tällöin päälläoloaika arvioidaan 0- ja -10 -asteen lämmitystarpeen tuntimäärästä arvioiden. Mukavuuslämmitysjärjestelmiä ei oteta huomioon pää- ja avustavan lisälämmitysjärjestelmän päälläolon arvioinnissa.
+Mikäli haluat määrittää itse lämmityksen päälläolotunnit eri lämpötilapisteissä, voit lisätä lämmityslaitteen "Mukavuuslämmitysjärjestelmänä". Tällöin vuorokauden tarvittava lämmitystuntimäärä arvioidaan lisättyjen lämpötilapisteiden tuntimäärästä ennustetun keskilämpötilan perusteella.&#x20;
+
+Lämmitysjärjestelmän asetuksissa tulee lisätä vähintään kaksi lämpötilapistettä . Mukavuuslämmitysjärjestelmiä ei oteta huomioon pää- ja avustavan lisälämmitysjärjestelmän päälläolon arvioinnissa.
 
 Voit lisäksi määrittää jakson keskilämpötilan mikä alapuolella mukavuuslämmitysjärjestelmä on aktiivinen.
 
 {% hint style="info" %}
-Mukavuuslämmitysjärjestelmän lämmitystarve arvioidaan 0 ja -10 asteen kytkentätuntien perusteella. Mikäli esimerkiksi 0 asteessa tarve on 4h ja -10 asteessa 8h, lasketaan -5 asteessa päälläolotarpeeksi 6h. Mukavuuslämmitys kytketään päälle periodeittain kiinteistön lämmönvarauskyvyn perusteella.
+Mukavuuslämmitysjärjestelmän lämmitystarve arvioidaan annettujen pisteiden vuorokauden kytkentätuntien perusteella. Mikäli esimerkiksi 0 asteessa tarve on 4h ja -10 asteessa 8h, lasketaan -5 asteessa päälläolotarpeeksi 6h. Voit valita järjestelmän asetuksissa kuinka monen tunnin jaksoihin päälläolotunnit jaetaan, tuolloin vuorokausitarpeen mukainen lämmitysmäärä jaetaan tasan kyseisiin aikaperiodeihin.
 {% endhint %}
-
