@@ -16,9 +16,9 @@
   * [3. Ohjauslaitteen asetukset](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/3.-ohjauslaitteen-asetukset.md)
 * [🌡️ Lämmityksen ohjaus](sivuston-ohjeet/laemmityksen-ohjaus/README.md)
   * [Toimintaperiaate](sivuston-ohjeet/laemmityksen-ohjaus/toimintaperiaate.md)
-  * [1. Kiinteistön lisääminen](sivuston-ohjeet/laemmityksen-ohjaus/1.-kiinteistoen-lisaeaeminen.md)
+  * [1. Lämmitysasetusten aktivointi](sivuston-ohjeet/laemmityksen-ohjaus/1.-kiinteistoen-lisaeaeminen.md)
   * [2. Lämmitysjärjestelmän lisääminen](sivuston-ohjeet/laemmityksen-ohjaus/2.-laemmitysjaerjestelmaen-lisaeaeminen.md)
-  * [3. Ohjauslaitteen asetukset](sivuston-ohjeet/laemmityksen-ohjaus/3.-ohjauslaitteen-asetukset.md)
+  * [3. Ohjauslaiteliitos](sivuston-ohjeet/laemmityksen-ohjaus/3.-ohjauslaitteen-asetukset.md)
 
 ## Ohjauslaitteiden ohjeet
 
