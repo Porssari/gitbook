@@ -1,3 +1,3 @@
-# Laitteen lisääminen Pörssäri-sivustolle
+# Laitteen lisääminen Pörssäriin
 
-Tämän oppaan avulla saat liitettyä laitteen omalle Pörssäri-tilillesi.
+Tässä osiossa luodaan Shellylle adoptiokoodi, lisätään se Shellyn Pörssäri-skriptiin ja tarkistetaan, että laite ja automaattisesti luodut ohjaukset näkyvät sovelluksessa.

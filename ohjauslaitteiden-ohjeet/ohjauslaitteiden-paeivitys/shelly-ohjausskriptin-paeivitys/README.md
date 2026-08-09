@@ -1,5 +1,5 @@
 ---
-description: Oppaan tekstit ja kuvat koottu yhdessä yhteisön jäsenen apua käyttäen.
+description: Opas on koottu yhdessä yhteisön jäsenen kanssa.
 layout:
   title:
     visible: true
@@ -26,7 +26,7 @@ Siirry oppaan ensimmäiselle sivulle tästä:
 #### Pikaohje päivitykseen:
 
 1. Poista Shellyn skriptikirjastosta sekä aiempi ohjausskripti sekä valvontaskripti.
-2. Päivitä Shellyn laiteohjelmisto uusimpaan tarjolla olevaan versioon. Shelly käynnistyy uudelleen laiteohjelmiston päivityksen yhteyessä.&#x20;
+2. Päivitä Shellyn laiteohjelmisto uusimpaan tarjolla olevaan versioon. Shelly käynnistyy uudelleen laiteohjelmiston päivityksen yhteydessä.
 3. Mikäli Shellyssä on jo käytössä uusin laiteohjelmisto, käynnistä Shelly tässä vaiheessa uudelleen.
 4. Päivitä tarvittaessa Shellyn ohjelmakirjaston osoite uuden laiteohjelmiston vaatimaan kirjastoon ([https://raw.githubusercontent.com/Porssari/Shelly-client/main/release/porssari-manifest.json](https://raw.githubusercontent.com/Porssari/Shelly-client/main/release/porssari-manifest.json)).
 5. Lataa ja tallenna kirjastosta ensin ohjausskripti ja sen jälkeen valvontaskripti.

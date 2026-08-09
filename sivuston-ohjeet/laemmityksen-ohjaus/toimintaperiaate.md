@@ -1,6 +1,6 @@
 # Toimintaperiaate
 
-Pörssäri arvioi kiinteistön päivittäisen lämmitystarpeen talon vuosikulutuksen sekä yr.no -rajapinnasta haetun ulkolämpötilaennusteen perusteella. Koska lämmitys arvioidaan koko kiinteistölle, on tärkeää lisätä järjestelmään myös sellaiset käytössä olevat lämmitysjärjestelmät mitä Pörssäri ei ohjaa. Lisäksi talon energiantarve on tärkeää arvioida mahdollisimman oikein.
+Pörssäri arvioi käyttöpaikan päivittäisen lämmitystarpeen rakennuksen vuosikulutuksen sekä yr.no-rajapinnasta haetun ulkolämpötilaennusteen perusteella. Koska lämmitys arvioidaan koko käyttöpaikalle, lisää järjestelmään myös käytössä olevat lämmitysjärjestelmät, joita Pörssäri ei ohjaa. Arvioi lisäksi rakennuksen energiantarve mahdollisimman oikein.
 
 {% hint style="info" %}
 Mikäli talossa on käytössä lämpöpumppu, ei sähkönkulutus vastaa talon lämmitysenergian tarvetta. Motivan sivuilta löytyy laskuri talon lämmitystarpeen arvioon neliömäärän, huonekorkeuden, henkilömäärän sekä rakennuksen sijainnin perusteella.
@@ -10,15 +10,15 @@ Mikäli talossa on käytössä lämpöpumppu, ei sähkönkulutus vastaa talon l�
 
 ### Lämmitystarpeen hienosäätö
 
-Mikäli ohjatut lämmitysjärjestelmät lämmittävät tasaisesti liikaa tai liian vähän, voit hienosäätää lämmitystarvetta lomakevalinnalla "Rakennuksen lämmitystarpeen hienosäätö". Mikäli talo lisääntyy/vähenee liikaa ulkolämpötilan laskiessa mutta on noin 0-asteen ulkolämmössä oikein, voidaan lämmitystarpeen muutosta hienosäätää valinnalla "Lämmitystarpeen muutoksen hienosäätö".
+Jos ohjatut lämmitysjärjestelmät lämmittävät tasaisesti liikaa tai liian vähän, voit hienosäätää lämmitystarvetta valinnalla **Rakennuksen lämmitystarpeen hienosäätö**. Jos rakennus lämpenee tai viilenee liikaa ulkolämpötilan laskiessa mutta asetus toimii noin nollan asteen säässä oikein, hienosäädä muutosta valinnalla **Lämmitystarpeen muutoksen hienosäätö**.
 
 ### Erilaiset lämmitysjärjestelmät
 
-Kiinteistöön on mahdollista lisätä tyypiltään kolmea erilaista lämmitysjärjestelmää. Nämä ovat "Päälämmitysjärjestelmä", "Avustava lisälämmitysjärjestelmä" sekä "Mukavuuslämmitysjärjestelmä".
+Käyttöpaikalle voi lisätä kolmenlaisia lämmitysjärjestelmiä: **Päälämmitysjärjestelmä**, **Avustava lisälämmitysjärjestelmä** ja **Mukavuuslämmitysjärjestelmä**.
 
 #### Päälämmitysjärjestelmä (lasketaan lämmitystarpeen perusteella)
 
-Kiinteistön päälämmitysjärjestelmäksi lisätään lämmityslaite/lämmityslaitteet, joiden halutaan tekevän pääosa lämmityksestä. Tällainen järjestelmä on esimerkiksi kiinteistön vesikiertoisen lämmityksen lämmönlähde, ilmalämpöpumppu tai suoran sähkölämmityksen ollessa kyseessä jokainen lämmityspiiri tai seinäpatteri joko yhteenlaskettuna tai erikseen.
+Käyttöpaikan päälämmitysjärjestelmäksi lisätään laite tai laitteet, joiden halutaan tuottavan pääosa lämmöstä. Tällainen järjestelmä voi olla esimerkiksi vesikiertoisen lämmityksen lämmönlähde, ilmalämpöpumppu tai suorassa sähkölämmityksessä kukin lämmityspiiri tai seinäpatteri joko erikseen tai yhteen laskettuna.
 
 {% hint style="info" %}
 Mikäli talossa on vain yksi lämmitysjärjestelmä (seinäpatterit, lämpöpumppu vesikiertoisella lämmönjaolla, sähköinen lattialämmitys), sinun tarvitsee lisätä ainoastaan päälämmitysjärjestelmä. Voit lisätä jokaisen lämmityselementin joko omana yksikkönä tai vaihtoehtoisesti laskea niiden tehon yhteen, ja lisätä kaikki laitteet yhtenä järjestelmänä.
@@ -26,21 +26,21 @@ Mikäli talossa on vain yksi lämmitysjärjestelmä (seinäpatterit, lämpöpump
 
 #### Avustava lisälämmitysjärjestelmä (lasketaan lämmitystarpeen perusteella)
 
-Mikäli kiinteistön päälämmityslähteenä on esimerkiksi ilmalämpöpumppu, voidaan muut lämmitysjärjestelmät (sähköpatterit/sähköinen lattialämmitys) lisätä Pörssäriin avustavana lisälämmitysjärjestelmänä.
+Jos käyttöpaikan päälämmityslähteenä on esimerkiksi ilmalämpöpumppu, muut lämmitysjärjestelmät, kuten sähköpatterit tai sähköinen lattialämmitys, voidaan lisätä avustavina lisälämmitysjärjestelminä.
 
-Voit määrittää avustavalle lisälämmitysjärjestelmälle minimäärän lämmitystarpeesta. Tämä tulee kysymykseen tilanteessa, missä halutaan esimerkiksi aina pieni määrä lämmitystä esimerkiksi lattialämmityksellä, mutta ilmalämpöpumppu hoitaa lämmityksestä pääosan.
+Voit määrittää avustavalle lisälämmitysjärjestelmälle vähimmäisosuuden lämmitystarpeesta. Tätä voi käyttää esimerkiksi silloin, kun lattialämmityksen halutaan olevan hieman päällä, vaikka ilmalämpöpumppu tuottaa pääosan lämmöstä.
 
-Mikäli et määritä avustavalle lisälämmitysjärjestelmälle minimimäärää kytketään se päälle ainoastaan tilanteessa, missä päälämmitysjärjestelmän lämmitysteho ei riitä täyttämään lämmitysjakson tarvetta kokonaisuudessaan. Lisälämmitysteho kytketään päälle jakson edullisimpiin tunteihin.
+Jos vähimmäisosuutta ei määritetä, avustava lämmitys kytketään päälle vain silloin, kun päälämmitysjärjestelmän teho ei riitä täyttämään lämmitysjakson tarvetta. Lisälämmitys ajoitetaan jakson edullisimpiin tunteihin.
 
 {% hint style="info" %}
 Mikäli et ohjaa päälämmönlähteenä olevaa lämpöpumppua Pörssärillä, mutta haluat silti automaattisen ohjauksen lisälämmönlähteisiin, tulee lämpöpumppu kuitenkin lisätä päälämmitysjärjestelmäksi oikean lämmitysmäärän arvioimista varten.
 {% endhint %}
 
-#### Mukavuuslämmitysjärjestelmä (ei vaikuta kiinteistön lämmitystarpeen arviointiin)
+#### Mukavuuslämmitysjärjestelmä (ei vaikuta käyttöpaikan lämmitystarpeen arviointiin)
 
-Mikäli haluat määrittää itse lämmityksen päälläolotunnit eri lämpötilapisteissä, voit lisätä lämmityslaitteen "Mukavuuslämmitysjärjestelmänä". Tällöin vuorokauden tarvittava lämmitystuntimäärä arvioidaan lisättyjen lämpötilapisteiden tuntimäärästä ennustetun keskilämpötilan perusteella.&#x20;
+Jos haluat määrittää itse lämmityksen päälläolotunnit eri lämpötilapisteissä, lisää lämmityslaite mukavuuslämmitysjärjestelmänä. Tällöin vuorokauden tarvittava lämmitystuntimäärä arvioidaan lämpötilapisteiden tuntimääristä ennustetun keskilämpötilan perusteella.
 
-Lämmitysjärjestelmän asetuksissa tulee lisätä vähintään kaksi lämpötilapistettä . Mukavuuslämmitysjärjestelmiä ei oteta huomioon pää- ja avustavan lisälämmitysjärjestelmän päälläolon arvioinnissa.
+Lisää lämmitysjärjestelmän asetuksiin vähintään kaksi lämpötilapistettä. Mukavuuslämmitysjärjestelmiä ei oteta huomioon pää- ja avustavan lisälämmitysjärjestelmän päälläolon arvioinnissa.
 
 Voit lisäksi määrittää jakson keskilämpötilan mikä alapuolella mukavuuslämmitysjärjestelmä on aktiivinen.
 

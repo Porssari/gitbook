@@ -5,16 +5,16 @@ coverY: 0
 
 # 🔌 Pörssärin ohjesivusto
 
-Pörssäri on helppokäyttöinen ohjauspalvelu kodin sähkölaitteiden ohjaukseen pörssisähkön hinnan, ulkolämpötilaennusteen sekä aurinkopaneeleiden tuotantoennusteen perusteella.
+Pörssäri on kodin sähkölaitteiden ohjauspalvelu. Se muodostaa ohjauksia sähkön hinnan, käyttäjän asetusten sekä tarvittaessa sää- ja aurinkoennusteiden perusteella. Käyttö tapahtuu [Pörssäri-sovelluksessa](https://porssari.fi/app/).
 
-Sähkön day-ahead -hintatiedot ovat NordPoolin omistamaa lisenssinalaista dataa, ja niiden uudelleenjakaminen ilman asianmukaista lisenssiä on kielletty. Pörssäri on selvittänyt yhdessä NordPoolin kanssa, että palvelu nykymuodossaan on vaatimusten mukainen, ja sitä voidaan ilmaispalveluna tarjota ilman hintatietojen uudelleenjakamislisenssiä.
+Pörssärin käyttö on helppoa aloittaa rekisteröitymällä palveluun joko sähköpostiosoitteella tai Google-kirjautumista käyttäen. Lisää sen jälkeen sähkön käyttöpaikka, jolloin sille luodaan automaattisesti **Päärakennus**. Lisää seuraavaksi laite ja tarkista sen kanaville syntyneet ohjaukset. Tarkemmat vaiheet ovat [aloitusohjeessa](sivuston-ohjeet/aika-ja-hintaohjaus/README.md) ja [laitteiden käyttöönotossa](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/).
 
-Pörssärin käyttöönotto onnistuu helpoiten Shelly-älyreleen avulla. Luotettavia suomalaisia verkkokauppoja Shellyn hankintaan ovat esimerkiksi [Nurkan Takaa -verkkokauppa](https://verkkokauppa.nurkantakaa.fi/) sekä [Shellykauppa.fi](https://shellykauppa.fi). Edellämainitut kauppiaat tarjoavat myös apua oikean Shelly-releen valintaan, ja skriptien esiasennus on myös osin mahdollista ostaa tuotteen mukana.
+Sähkön day-ahead-hintatiedot ovat Nord Poolin omistamaa lisenssinalaista dataa, ja niiden uudelleenjakaminen ilman asianmukaista lisenssiä on kielletty. Pörssäri on selvittänyt yhdessä Nord Poolin kanssa, että palvelu nykymuodossaan on vaatimusten mukainen ja sitä voidaan tarjota ilmaispalveluna ilman hintatietojen uudelleenjakamislisenssiä.
 
-Kokonaan asennusvalmiin ratkaisun tarjoaa esimerkiksi [Energiavahti Oy](https://evlammittaa.fi/tuote/shelly-ohjauspaketti-asennettuna/).
+Pörssärin käyttöönotto onnistuu helpoiten Shelly-älyreleen avulla. Shellyn voi hankkia esimerkiksi [Nurkan Takaa -verkkokaupasta](https://verkkokauppa.nurkantakaa.fi/) tai [Shellykauppa.fi-verkkokaupasta](https://shellykauppa.fi). Kauppiailta voi pyytää apua oikean releen valintaan.
 
-Yhteensopivia malleja Pörssärin kanssa ovat kaikki Shelly Plus, Shelly Pro, Shelly Pro3EM + Addon ja Shelly Gen3- ja Gen4-sarjan releet mistä löytyy tuki skriptiohjaukselle. Kontaktoriohjaukseen PM-mallit eivät ole suositeltavia.
+Pörssärin kanssa yhteensopivia ovat Shelly Plus-, Shelly Pro-, Shelly Pro 3EM + Add-on-, Shelly Gen3- ja Shelly Gen4 -sarjojen releet, joissa on skriptiohjauksen tuki. Kontaktoriohjaukseen PM-mallit eivät ole suositeltavia.
 
-Lisäksi tarvitset sähköasentajan kytkemään Shellyn paikalleen mikäli et ostanut asennusvalmista ratkaisua releitä hankkiessa.
+Teetä Shellyn kiinteään sähköasennukseen liittyvät kytkennät sähköalan ammattilaisella. Lisätietoa sallituista sähkötöistä on [Tukesin ohjeessa](https://tukes.fi/kodin-sahkoturvallisuus/mita-sahkotoita-saan-tehda-itse).
 
-Shellyn lisäksi tällä hetkellä tuettuna on Home Assistant sekä Raspberry Pico W -releohjaus Micropython-pohjaisella järjestelmällä. Ulkoisista ohjauspalveluista tuettuina on ilmalämpöpumpun ohjaus Sensibo-ohjauslaitetta hyödyntäen sekä Themo-lattialämmitystermostaattien ohjaus.
+Shellyn lisäksi tuettuna on Home Assistant sekä mukautettu laite. Pilvipalveluista julkisesti tuettuina ovat Sensibo ja Themo.

@@ -12,117 +12,91 @@ layout:
     visible: false
 ---
 
-# 🖥 Rajapintakuvaus
+# 🖥️ Rajapintakuvaus
 
-## Versio 2 (current)
+## Ohjauslaitteen kyselyrajapinta
 
-Pörssärin rajapinta on HTTP GET osoitteeseen _https://api.porssari.fi/getcontrols.php_, neljällä pakollisella parametrillä:
+Nykyisten laiteasiakkaiden yhteensopivuusrajapinta on:
 
-* device\_mac: laitteen MAC-osoite isoilla kirjaimilla ja ilman muita merkkejä, esim A1B2C3D4E5F6
-* last\_request: edellisen JSON-ohjaustiedon aikaleima (UNIX-timestamp -muodossa, 0 mikäli ohjaustietoa ei ole tallennettu laitteeseen)
-* client: käyttäjön skriptin nimi ja versio
-* json\_version=2 : käytä API versio 2:ta
+```http
+GET /api/v1/controls-legacy
+```
 
-Eli esimerkiksi: https://api.porssari.fi/getcontrols.php?device\_mac=A1B2C3D4E5F6\&last\_request=1702815000\&client=documentation-example-1\&json\_version=2
+Nimestään huolimatta `controls-legacy` on nykyisten laiteskriptien käytössä oleva yhteensopivuuspinta. Se ei käytä käyttäjän Bearer-tunnusta eikä vanhaa `getcontrols.php`-reittiä. Käytä aina `json_version=3`.
 
-* Mikäli last\_request -parametri on alle tunti nykyhetkestä taaksepäin, palvelin vastaa http-koodilla 304
-* Mikäli device\_mac -parametrin mukaista laitetta ei löydy tietokannasta, palvelin vastaa http-koodilla 400
-* Mikäli samalla device\_mac -parametrilla kysytään alle 10 sekunnin kuluessa edellisestä kyselystä, palvelin vastaa http-koodilla 425
-* Mikäli samalla device\_mac -parametrilla kysytään yli 60 kertaa tunnin kuluessa, palvelin vastaa http-koodilla 429
+### Kyselyparametrit
 
-Muussa tapauksessa palvelin vastaa JSON-objektilla:
+| Parametri | Pakollinen | Kuvaus |
+| --- | --- | --- |
+| `device_mac` | kyllä | Laitetunniste; palvelu normalisoi arvon isoiksi kirjaimiksi. |
+| `timestamp` | kyllä | Laitetodisteen Unix-aikaleima. |
+| `nonce` | kyllä | Kertakäyttöinen 16–64 merkin satunnaisarvo. |
+| `signature` | kyllä | Pienillä heksamerkeillä esitetty HMAC-SHA256-todiste. |
+| `json_version` | ei | Oletus on `3`. Lähetä arvo `3` eksplisiittisesti; muut arvot hylätään. |
+| `last_request` | ei | Edellisen saadun ohjaustiedon Unix-aikaleima; oletus on `0`. |
+| `prices` | ei | Pyytää hintatietoja, jos käyttöoikeus sallii ne. |
+| `schedule_full_day` | ei | Käyttää koko paikallisen kalenteripäivän ohjausikkunaa. |
+| `cut_schedule` | ei | Rajaa palautettavien tulevien tilanvaihtojen enimmäismäärän (1–256). |
+| `json_channel_names` | ei | Sisällyttää kanavien nimet, kun ne ovat saatavilla. |
+| `timestamp_format` | ei | `unix` (oletus) tai `iso`. |
+| `headers` | ei | Palauttaa onnistuneessa status-only-kyselyssä tyhjän rungon. |
+| `script_version`, `client_fw`, `client_model` | ei | Asiakkaan versio- ja mallimetatiedot. |
+
+### Allekirjoitettu laitetodiste
+
+Laite saa käyttöönotossa laitekohtaisen salaisuuden. Salaisuutta ei saa lähettää pyynnössä, kirjata lokiin tai julkaista. Jokaiselle kyselylle luodaan uusi aikaleima ja nonce.
+
+Palvelu muodostaa kanonisen kyselymerkkijonon kaikista query-parametreista paitsi `signature`-parametrista. Avain–arvo-parit URL-koodataan RFC 3986 -tyyliin, `device_mac` korvataan normalisoidulla arvolla ja parit järjestetään avaimen sekä arvon mukaan. HMAC-SHA256:n syöte on UTF-8-muodossa seuraavat seitsemän riviä:
+
+```text
+GET
+/api/v1/controls-legacy
+<kanoninen-kysely-ilman-signaturea>
+<normalisoitu-device_mac>
+<timestamp>
+<nonce>
+<SHA-256-tyhjästä-pyynnön-rungosta>
+```
+
+Allekirjoitus on tämän syötteen HMAC-SHA256 laitteen salaisuudella, esitettynä 64-merkkisenä pienaakkosisena heksamerkkijonona. Aikaleiman pitää olla palveluympäristön sallitun aikapoikkeaman sisällä; oletusraja on viisi minuuttia. Nonce hyväksytään vain kerran, joten samaa allekirjoitettua pyyntöä ei voi toistaa.
+
+Älä käytä toimivaa salaisuutta tai allekirjoitusta dokumentaatioesimerkissä. Asiakas toteuttaa kanonisoinnin ennen allekirjoituksen laskemista; parametreja ei saa muuttaa sen jälkeen.
+
+### Vastaus
+
+Onnistunut `200`-vastaus on suoraan JSON-objekti (ei yleistä response-envelopea):
 
 ```json
 {
-"metadata": {
-    "mac": "A1B2C3D4E5F6",
-    "channels": "1",
-    "fetch_url": "https://api.porssari.fi/getcontrols.php",
-    "timestamp": "1702821684",
-    "timestamp_offset": "7200",
-    "valid_until": "1702940100"
+  "metadata": {
+    "mac": "ESIMERKKILAITE",
+    "channels": [1],
+    "fetch_url": "https://example.invalid/api/v1/controls-legacy",
+    "timestamp": 1735689600,
+    "valid_until": 1735776000,
+    "json_version": 3
   },
-  "controls": [
-    {
-      "id": "1",
-      "name": "examplename",
-      "updated": "1702708849",
-      "state": "0",
-      "schedules": [
-        { "timestamp": "1702850368", "state": "1" },
-        { "timestamp": "1702853976", "state": "0" },
-        { "timestamp": "1702857522", "state": "1" },
-        { "timestamp": "1702875674", "state": "0" },
-        { "timestamp": "1702936868", "state": "1" }
-      ]
-    }
-  ]
+  "ch_data": [
+    {"id": "1", "name": "Lämminvesivaraaja", "updated": 1735689500, "state": "0", "failsafe": []}
+  ],
+  "controls": [[1735693200, 1, 1], [1735696800, 1, 0]]
 }
 ```
 
-##
+`controls` sisältää rivejä muodossa `[aikaleima, kanava, tila]`. Kun `prices=true` on sallittu ja hintatietoa on saatavana, vastaus voi sisältää lisäksi `prices`-objektin.
 
-## Versio 1 (legacy)
+### Tila- ja virhekoodit
 
-Legacy-rajapinta vastaa ohjaustilan tuntitasolla. Mikäli käytössä on ohjaustila mikä annetaan 15min resoluutiolla (esimerkiksi lämmitysohjaus), rajapinta palauttaa tunnin arvoksi kyseisen tunnint ensimmäisen 15 minuutin ajanjakson ohjaustilan.
+| Tila | Merkitys |
+| --- | --- |
+| `200` | Ohjaustiedot palautettiin. `headers=true` voi palauttaa tyhjän rungon. |
+| `204` | Laitteelle ei ole ohjausrivejä valitussa ikkunassa. |
+| `304` | Laitteella on jo riittävän tuore ohjaustieto `last_request`-arvon perusteella. |
+| `401` | Laitetodiste puuttuu. |
+| `403` | Laite tai todistus on virheellinen, vanhentunut tai nonce on käytetty aiemmin. |
+| `422` | Parametrien muoto tai arvo on virheellinen, esimerkiksi muu JSON-versio kuin 3. |
+| `425` | Kyselyväli on liian lyhyt. |
+| `429` | Kyselymäärä on ylittänyt rajan; vastaus voi sisältää `Retry-After`-otsakkeen. |
+| `503` | Todisteen toistonesto tai nopeusrajoitus ei ole käytettävissä. |
 
-Lähtökohtaisesti Pörssärin rajapinta on HTTP GET osoitteeseen _https://api.porssari.fi/getcontrols.php_, kolmella pakollisella parametrillä:
-
-* device\_mac: laitteen MAC-osoite isoilla kirjaimilla ja ilman muita merkkejä, esim A1B2C3D4E5F6
-* last\_request: edellisen JSON-ohjaustiedon aikaleima (UNIX-timestamp -muodossa, 0 mikäli ohjaustietoa ei ole tallennettuna laitteeseen)
-* client: käyttäjön skriptin nimi ja versio
-
-Eli esimerkiksi: https://api.porssari.fi/getcontrols.php?device\_mac=A1B2C3D4E5F6\&last\_request=1702815000\&client=documentation-example-1
-
-* Mikäli last\_request -parametri on alle tunti nykyhetkestä taaksepäin, palvelin vastaa http-koodilla 304
-* Mikäli device\_mac -parametrin mukaista laitetta ei löydy tietokannasta, palvelin vastaa http-koodilla 400
-* Mikäli samalla device\_mac -parametrilla kysytään alle 10 sekunnin kuluessa edellisestä kyselystä, palvelin vastaa http-koodilla 425
-* Mikäli samalla device\_mac -parametrilla kysytään yli 60 kertaa tunnin kuluessa, palvelin vastaa http-koodilla 429
-
-Palvelin vastaa tavallisesti JSON objektilla:
-
-```json
-{
-    "Metadata": {
-        "Mac": "A1B2C3D4E5F6",
-        "Channels": "1",
-        "Fetch_url": "https://api.porssari.fi/getcontrols.php",
-        "Date": "2023-12-16",
-        "Time": "21:26:00",
-        "Timestamp": "1702754760",
-        "Timestamp_offset": "7200",
-        "Hours_count": 24,
-    },
-    "Channel1": {
-        "21": "1",
-        "22": "1",
-        "23": "1",
-        "0": "0",
-        "1": "1",
-        "2": "1",
-        "3": "1",
-        "4": "1",
-        "5": "1",
-        "6": "1",
-        "7": "0",
-        "8": "0",
-        "9": "0",
-        "10": "0",
-        "11": "0",
-        "12": "0",
-        "13": "0",
-        "14": "0",
-        "15": "0",
-        "16": "0",
-        "17": "0",
-        "18": "0",
-        "19": "0",
-        "20": "0",
-    },
-}
-```
-
-Tässä esimerkissä kanavien lukumäärä on yksi.
-
-Kellonajat ovan suomen aikaa paitsi Timestamp joka UTC ja johon voi lisätä Timestamp\_offset että on suomen ajassa.
-
+Käsittele `304` ja `204` normaalina tilana, säilytä edellinen kelvollinen ohjaus turvallisesti ja noudata `Retry-After`-otsaketta. Rajapinta on tarkoitettu laiteasiakkaille, ei yleiseksi hintadata- tai käyttäjärajapinnaksi.

@@ -1,17 +1,7 @@
 # ❓ Miten Pörssäri toimii?
 
-Pörssäri ohjaa kodin sähkölaitteita päälle ja pois älyreleiden avustuksella. Palvelinkyselyn perusteella asiakaslaite saa taustapalvelimelta käyttäjäasetusten, sähkön hintatietojen sekä mahdollisen sääennusteen ja aurinkoennusteen perusteella lasketun päällä/pois -ohjaustiedon.
+Pörssäri muodostaa kodin sähkölaitteille ohjausaikatauluja käyttäjän asetusten, sähkön hintatietojen sekä tarvittaessa sää- ja aurinkoennusteiden perusteella. Käyttäjä lisää käyttöpaikan ja laitteen sovelluksessa; Pörssäri luo ensimmäisen rakennuksen ja laitteen kanavien ohjaukset automaattisesti.
 
-Ohjaustieto lähetetään laitteeseen:
+Laite tai laiteasiakas vastaanottaa tai hakee ohjaustiedon Pörssärin palvelusta ja käyttää sitä paikallisesti. Ohjaus voidaan säilyttää laitteessa, joten yksittäinen lyhyt verkkokatko ei välttämättä keskeytä jo saatua aikataulua. Tarkka toiminta riippuu käytettävästä laiteasiakkaasta ja sen asetuksista.
 
-* aina asiakaslaitteen käynnistyessä
-* kun käyttäjäasetuksia muutetaan
-* mikäli edellisestä ohjaustiedon lähettämisestä on kulunut yli tunti aikaa.
-
-Tavanomaisiin ns. pilvipalveluihin tai muihin Shellyn ohjausskripteihin verrattuna Pörssärin ohjaus ei vaadi jatkuvaa internet-yhteyttä. Ohjaustieto talletetaan paikalliseen muistiin aina koko sähkön hintatietojen ajaksi, eli vähintään kuluvan vuorokauden loppuun saakka.
-
-Käyttäjäasetuksia voidaan muuttaa mistä tahansa sijainnista internet-yhteyden välityksellä. Pörssärin kautta ei kuitenkaan ole pääsyä käyttäjän kotiverkkoon, sillä ohjaustieto palautetaan vastauksena ohjauslaitteen suorittamaan kyselyyn. Pörssäri ei tarvitse toimiakseen Shellyn Cloud -ominaisuutta, mutta sen käytölle ei myöskään ole mitään estettä.
-
-<figure><img src=".gitbook/assets/toimintakaavio.png" alt=""><figcaption></figcaption></figure>
-
-Pörssärin etuna on helppokäyttöinen asetusten muokkaus. Käyttäjän ei tarvitse tehdä muutoksia Pörssärin Shelly-ohjelmakirjaston kautta haettuun valmiiseen ohjelmakoodiin. Lisäksi asetukset ovat tallessa taustapalvelimella mikäli ohjausohjelma päivitetään, tai ohjauslaite syystä tai toisesta vioittuu ja joudutaan vaihtamaan uuteen. Mikäli käytössä olisi skriptiohjaus missä asetukset on tallennettuna skriptin joukkoon, tulisi käyttäjäasetukset tehdä päivityksen yhteydessä aina uudelleen.
+Käyttäjä muokkaa asetuksia sovelluksessa. Pörssäri ei muodosta suoraa yhteyttä käyttäjän kotiverkkoon, vaan laite tai laiteasiakas aloittaa yhteyden palveluun.

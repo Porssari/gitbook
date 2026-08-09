@@ -1,7 +1,11 @@
-# Kiinteistön lisääminen sekä asetukset
+# Käyttöpaikan lisääminen ja asetukset
 
-Ohjausasetusten lisääminen aloitetaan lisäämällä käyttäjätunnukselle kiinteistö Ohjausasetukset-osiossa. Kiinteistön pääsulakekoko valitaan sähköliittymän mittarikeskuksen pääsulakekoon perusteella. Mikäli sinulla on tarkoitus hyödyntää aurinkosähköohjausta tai ulkolämpötilaennusteen perusteella laskettavaa ohjausta, kannatta jo tässä vaiheessa lisätä kiinteistön sijaintikoordinaatit. Koordinaatit löytää esimerkiksi Google Maps -palvelun avulla.
+Avaa käyttäjävalikko ja valitse **Käyttöpaikat**-osiosta **Lisää käyttöpaikka**. Luo käyttöpaikka, esimerkiksi **Testikiinteistö**. Pörssäri ottaa uuden käyttöpaikan käyttöön ja luo sille automaattisesti rakennuksen nimeltä **Päärakennus**.
 
-Kun olet lisännyt kiinteistön, voit halutessasi lisätä mukautetut hinta-asetukset. Mikäli sinulla on käytössä kiinteä sähkön siirtotariffi, ei mukautettuja hinta-asetuksia ole välttämätöntä käyttää. Tällöin  sähkön tuntihintana käytetään verollista spot-hintaa ilman myyjäyhtiön marginaalia. Mikäli sinulla on käytössä vaihtuva tariffi, esimerkiksi aikasähkö tai kausisähkö, on hyödyllistä syöttää omat hinta-asetukset. Tällöin ohjausasetuksissa käytetään sähkön kokonaishintaa, mikä on hyvä huomioida hintarajoja asetettaessa.
+Avaa tämän jälkeen **Asetukset**. Anna käyttöpaikan asetuksiin ohjausten tarvitsemat tiedot. Jos käytät sää- tai aurinkoennustetta, lisää sijaintitiedot asetuksissa vain siinä laajuudessa kuin palvelu pyytää.
 
-Mikäli käytössäsi on aurinkovoimala ja haluat käyttää aurinkosähköennusteeseen perustuvaa ohjausta, voi lisätä kiinteistöön Aurinkosähköjärjestelmiä. Jokaisen paneelikentän voi syöttää erillisenä aurinkovoimalana jolloin päästään parhaaseen ennustetarkkuuteen.
+Lisää Asetuksissa muita rakennuksia vain tarvittaessa, esimerkiksi **Autotalli**. Rakennukset erottavat kohteet, joissa ohjaukset sijaitsevat. Laitteen käyttöönotossa syntyvät ohjaukset kohdistetaan oikeaan rakennukseen.
+
+Hinta- ja siirtohinta-asetukset löytyvät samasta **Asetukset**-näkymästä. Lisää oma marginaali, sähkövero ja vaihtuvan siirtotariffin tiedot, jos haluat ohjausten vertaavan sähkön kokonaishintaa. Kiinteällä siirtotariffilla erillisiä siirtoaikoja ei yleensä tarvitse määrittää.
+
+Aurinkosähköjärjestelmät lisätään Asetuksissa käyttöpaikalle. Lisää kukin paneelikenttä omana järjestelmänään, jos niiden suuntaus tai kaltevuus poikkeaa toisistaan.
