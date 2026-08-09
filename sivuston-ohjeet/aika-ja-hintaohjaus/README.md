@@ -23,5 +23,7 @@ Pörssärissä käyttöönoton järjestys on **käyttöpaikka ja rakennus → la
 
 Ohjausta ei tarvitse luoda erikseen ennen laitteen lisäämistä.
 
+![Päärakennuksen ohjaukset Testikiinteistössä](../../.gitbook/assets/app-controls.png)
+
 
 

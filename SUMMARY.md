@@ -16,9 +16,9 @@
   * [2. Aurinkosähkön hyödyntäminen](sivuston-ohjeet/aurinkosaehkoen-kaeyttoe/3.-ohjauslaitteen-asetukset.md)
 * [🌡️ Lämmityksen ohjaus](sivuston-ohjeet/laemmityksen-ohjaus/README.md)
   * [Toimintaperiaate](sivuston-ohjeet/laemmityksen-ohjaus/toimintaperiaate.md)
-  * [1. Lämmitysasetusten aktivointi](sivuston-ohjeet/laemmityksen-ohjaus/1.-kiinteistoen-lisaeaeminen.md)
+  * [1. Rakennuksen lämmitysasetukset ja tilat](sivuston-ohjeet/laemmityksen-ohjaus/1.-kiinteistoen-lisaeaeminen.md)
   * [2. Lämmitysjärjestelmän lisääminen](sivuston-ohjeet/laemmityksen-ohjaus/2.-laemmitysjaerjestelmaen-lisaeaeminen.md)
-  * [3. Ohjausasetukset](sivuston-ohjeet/laemmityksen-ohjaus/3.-ohjauslaitteen-asetukset.md)
+  * [3. Ohjaimet ja laitekanavan asetukset](sivuston-ohjeet/laemmityksen-ohjaus/3.-ohjauslaitteen-asetukset.md)
 
 ## Laitteiden käyttöönotto
 
@@ -29,6 +29,7 @@
       * [2. Luo adoptiokoodi](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/laitteen-lisaeaeminen-poerssaeri-sivustolle/2.-siirtyminen-uuden-laitteen-lisaeyslomakkeelle.md)
       * [3. Lisää koodi Shelly-skriptiin](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/laitteen-lisaeaeminen-poerssaeri-sivustolle/3.-uuden-laitteen-lisaeyslomake.md)
       * [4. Tarkista laite ja ohjaukset](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/laitteen-lisaeaeminen-poerssaeri-sivustolle/4.-valmista-tuli.md)
+    * [Shelly-laitteen manuaalinen lisääminen](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/manuaalinen-shelly-lisaeys.md)
     * [Ohjausskriptin lisääminen Shelly-laitteeseen](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/ohjausskriptin-lisaeaeminen-shelly-laitteeseen/README.md)
       * [1. Siirtyminen skriptivalikkoon](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/ohjausskriptin-lisaeaeminen-shelly-laitteeseen/1.-siirtyminen-skriptivalikkoon.md)
       * [2. Shellyn skriptivalikko](kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/ohjausskriptin-lisaeaeminen-shelly-laitteeseen/2.-shellyn-skriptivalikko.md)

@@ -1,49 +1,31 @@
 # Toimintaperiaate
 
-Pörssäri arvioi käyttöpaikan päivittäisen lämmitystarpeen rakennuksen vuosikulutuksen sekä yr.no-rajapinnasta haetun ulkolämpötilaennusteen perusteella. Koska lämmitys arvioidaan koko käyttöpaikalle, lisää järjestelmään myös käytössä olevat lämmitysjärjestelmät, joita Pörssäri ei ohjaa. Arvioi lisäksi rakennuksen energiantarve mahdollisimman oikein.
+Pörssäri arvioi rakennuksen lämmitystarvetta tallennetun **Vuotuisen lämmitystarpeen**, lämmitettävän pinta-alan ja ulkolämpötilaennusteen perusteella. Järjestelmä ajoittaa tarvittavaa lämmitystä edullisille ajankohdille käytettävissä olevan lämmitystehon ja asetettujen rajoitusten puitteissa.
+
+Lisää järjestelmään myös rakennuksen lämmitykseen vaikuttavat lämmitysjärjestelmät, vaikka Pörssäri ei ohjaisi niitä suoraan. Näin järjestelmien roolit ja käytettävissä oleva lämmitysteho voidaan kuvata mahdollisimman oikein.
 
 {% hint style="info" %}
-Mikäli talossa on käytössä lämpöpumppu, ei sähkönkulutus vastaa talon lämmitysenergian tarvetta. Motivan sivuilta löytyy laskuri talon lämmitystarpeen arvioon neliömäärän, huonekorkeuden, henkilömäärän sekä rakennuksen sijainnin perusteella.
-
-[https://lammitysvertailu.eneuvonta.fi](https://lammitysvertailu.eneuvonta.fi) (Kohta 1. Rakennuksen tiedot)
+Lämpöpumpun sähkönkulutus ei vastaa suoraan rakennuksen tarvitsemaa lämmitysenergiaa. Motivan [lämmitystapojen vertailulaskuri](https://lammitysvertailu.eneuvonta.fi) auttaa arvioimaan rakennuksen lämmitystarvetta.
 {% endhint %}
 
-### Lämmitystarpeen hienosäätö
+## Lämmityskäyrän hienosäätö
 
-Jos ohjatut lämmitysjärjestelmät lämmittävät tasaisesti liikaa tai liian vähän, voit hienosäätää lämmitystarvetta valinnalla **Rakennuksen lämmitystarpeen hienosäätö**. Jos rakennus lämpenee tai viilenee liikaa ulkolämpötilan laskiessa mutta asetus toimii noin nollan asteen säässä oikein, hienosäädä muutosta valinnalla **Lämmitystarpeen muutoksen hienosäätö**.
+Rakennuksen lämmitysasetuksissa on kaksi hienosäätöä:
 
-### Erilaiset lämmitysjärjestelmät
+- **Lämmityskäyrän kulmakerroin** muuttaa sitä, kuinka voimakkaasti lämmitystarve kasvaa ulkolämpötilan laskiessa.
+- **Lämmityskäyrän tasokorjaus** nostaa tai laskee lämmitystarvetta koko käyrällä.
 
-Käyttöpaikalle voi lisätä kolmenlaisia lämmitysjärjestelmiä: **Päälämmitysjärjestelmä**, **Avustava lisälämmitysjärjestelmä** ja **Mukavuuslämmitysjärjestelmä**.
+Jos rakennus on tasaisesti liian lämmin tai kylmä eri ulkolämpötiloissa, säädä ensin tasokorjausta. Jos poikkeama kasvaa pakkasen kiristyessä, säädä kulmakerrointa. Tee pieni muutos kerrallaan ja seuraa vaikutusta ennen seuraavaa muutosta.
 
-#### Päälämmitysjärjestelmä (lasketaan lämmitystarpeen perusteella)
+**Varmistustunnit vuorokaudessa** määrittää lämmitykselle varmistusajan. Käytä rakennukselle ja lämmitysjärjestelmälle sopivaa arvoa.
 
-Käyttöpaikan päälämmitysjärjestelmäksi lisätään laite tai laitteet, joiden halutaan tuottavan pääosa lämmöstä. Tällainen järjestelmä voi olla esimerkiksi vesikiertoisen lämmityksen lämmönlähde, ilmalämpöpumppu tai suorassa sähkölämmityksessä kukin lämmityspiiri tai seinäpatteri joko erikseen tai yhteen laskettuna.
+## Lämmitysjärjestelmän rooli
 
-{% hint style="info" %}
-Mikäli talossa on vain yksi lämmitysjärjestelmä (seinäpatterit, lämpöpumppu vesikiertoisella lämmönjaolla, sähköinen lattialämmitys), sinun tarvitsee lisätä ainoastaan päälämmitysjärjestelmä. Voit lisätä jokaisen lämmityselementin joko omana yksikkönä tai vaihtoehtoisesti laskea niiden tehon yhteen, ja lisätä kaikki laitteet yhtenä järjestelmänä.
-{% endhint %}
+Lämmitysjärjestelmää lisättäessä sen rooliksi voidaan merkitä **Päälämmitysjärjestelmä** tai **Tukilämmitysjärjestelmä**:
 
-#### Avustava lisälämmitysjärjestelmä (lasketaan lämmitystarpeen perusteella)
+- **Päälämmitysjärjestelmä** tuottaa rakennuksen ensisijaisen lämmön. Se voi olla esimerkiksi vesikiertoisen lämmityksen lämmönlähde, lämpöpumppu, sähköpatterit tai sähköinen lattialämmitys.
+- **Tukilämmitysjärjestelmä** täydentää päälämmitystä. Se voi olla esimerkiksi sähköpatteri tai lattialämmitys, jota käytetään muun lämmönlähteen rinnalla.
 
-Jos käyttöpaikan päälämmityslähteenä on esimerkiksi ilmalämpöpumppu, muut lämmitysjärjestelmät, kuten sähköpatterit tai sähköinen lattialämmitys, voidaan lisätä avustavina lisälämmitysjärjestelminä.
+Anna jokaiselle järjestelmälle sen todellinen lämpöteho ja valitse järjestelmän lämmittämät tilat. Jos järjestelmiä on useita, määritä niiden keskinäinen prioriteetti käyttötarkoituksen mukaan.
 
-Voit määrittää avustavalle lisälämmitysjärjestelmälle vähimmäisosuuden lämmitystarpeesta. Tätä voi käyttää esimerkiksi silloin, kun lattialämmityksen halutaan olevan hieman päällä, vaikka ilmalämpöpumppu tuottaa pääosan lämmöstä.
-
-Jos vähimmäisosuutta ei määritetä, avustava lämmitys kytketään päälle vain silloin, kun päälämmitysjärjestelmän teho ei riitä täyttämään lämmitysjakson tarvetta. Lisälämmitys ajoitetaan jakson edullisimpiin tunteihin.
-
-{% hint style="info" %}
-Mikäli et ohjaa päälämmönlähteenä olevaa lämpöpumppua Pörssärillä, mutta haluat silti automaattisen ohjauksen lisälämmönlähteisiin, tulee lämpöpumppu kuitenkin lisätä päälämmitysjärjestelmäksi oikean lämmitysmäärän arvioimista varten.
-{% endhint %}
-
-#### Mukavuuslämmitysjärjestelmä (ei vaikuta käyttöpaikan lämmitystarpeen arviointiin)
-
-Jos haluat määrittää itse lämmityksen päälläolotunnit eri lämpötilapisteissä, lisää lämmityslaite mukavuuslämmitysjärjestelmänä. Tällöin vuorokauden tarvittava lämmitystuntimäärä arvioidaan lämpötilapisteiden tuntimääristä ennustetun keskilämpötilan perusteella.
-
-Lisää lämmitysjärjestelmän asetuksiin vähintään kaksi lämpötilapistettä. Mukavuuslämmitysjärjestelmiä ei oteta huomioon pää- ja avustavan lisälämmitysjärjestelmän päälläolon arvioinnissa.
-
-Voit lisäksi määrittää jakson keskilämpötilan mikä alapuolella mukavuuslämmitysjärjestelmä on aktiivinen.
-
-{% hint style="info" %}
-Mukavuuslämmitysjärjestelmän lämmitystarve arvioidaan annettujen pisteiden vuorokauden kytkentätuntien perusteella. Mikäli esimerkiksi 0 asteessa tarve on 4h ja -10 asteessa 8h, lasketaan -5 asteessa päälläolotarpeeksi 6h. Voit valita järjestelmän asetuksissa kuinka monen tunnin jaksoihin päälläolotunnit jaetaan, tuolloin vuorokausitarpeen mukainen lämmitysmäärä jaetaan tasan kyseisiin aikaperiodeihin.
-{% endhint %}
+Lämmitysjärjestelmän tallentaminen ei luo uutta laitetta tai ohjausta. Tallennuksen jälkeen järjestelmään liitetään **Ohjaimet**-toiminnolla Pörssäriin jo lisätyn laitteen oikea kanava.
