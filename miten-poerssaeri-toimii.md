@@ -1,17 +1,11 @@
 # ❓ Miten Pörssäri toimii?
 
-Pörssäri ohjaa kodin sähkölaitteita päälle ja pois älyreleiden avustuksella. Palvelinkyselyn perusteella asiakaslaite saa taustapalvelimelta käyttäjäasetusten, sähkön hintatietojen sekä mahdollisen sääennusteen ja aurinkoennusteen perusteella lasketun päällä/pois -ohjaustiedon.
+Pörssäri muodostaa kodin sähkölaitteille ohjausaikatauluja käyttäjän asetusten, sähkön hintatietojen sekä tarvittaessa sää- ja aurinkoennusteiden perusteella. Käyttäjä lisää käyttöpaikan, rakennuksen ja laitteen sovelluksessa; laitteen kanaville voidaan luoda ohjaukset automaattisesti.
 
-Ohjaustieto lähetetään laitteeseen:
+Laite tai laiteasiakas hakee ohjaustiedon Pörssärin rajapinnasta ja käyttää sitä paikallisesti. Ohjaus voidaan säilyttää laitteessa, joten yksittäinen lyhyt verkkokatko ei välttämättä keskeytä jo haettua aikataulua. Tarkka toiminta riippuu käytettävästä laiteasiakkaasta ja sen asetuksista.
 
-* aina asiakaslaitteen käynnistyessä
-* kun käyttäjäasetuksia muutetaan
-* mikäli edellisestä ohjaustiedon lähettämisestä on kulunut yli tunti aikaa.
+Ulkoisten pilvipalveluiden ohjaus toimii reaaliajassa, eli ohjauslaitteella täytyy olla jatkuva internet-yhteys. Pörssäri varmistaa jokaisen käskyn perillemenon.
 
-Tavanomaisiin ns. pilvipalveluihin tai muihin Shellyn ohjausskripteihin verrattuna Pörssärin ohjaus ei vaadi jatkuvaa internet-yhteyttä. Ohjaustieto talletetaan paikalliseen muistiin aina koko sähkön hintatietojen ajaksi, eli vähintään kuluvan vuorokauden loppuun saakka.
+Käyttäjä muokkaa asetuksia sovelluksessa. Pörssäri ei muodosta suoraa yhteyttä käyttäjän kotiverkkoon, vaan laite tai laiteasiakas aloittaa yhteyden palveluun. Pörssäri ei tarvitse Shelly Cloud -ominaisuutta, mutta sen käytölle ei ole estettä.
 
-Käyttäjäasetuksia voidaan muuttaa mistä tahansa sijainnista internet-yhteyden välityksellä osoitteessa [https://porssari.fi/app/](https://porssari.fi/app/). Pörssärin kautta ei kuitenkaan ole pääsyä käyttäjän kotiverkkoon, sillä ohjaustieto palautetaan vastauksena ohjauslaitteen suorittamaan kyselyyn. Pörssäri ei tarvitse toimiakseen Shellyn Cloud -ominaisuutta, mutta sen käytölle ei myöskään ole mitään estettä.
-
-<figure><img src=".gitbook/assets/toimintakaavio.png" alt=""><figcaption></figcaption></figure>
-
-Pörssärin etuna on helppokäyttöinen asetusten muokkaus. Käyttäjän ei tarvitse tehdä muutoksia Pörssärin Shelly-ohjelmakirjaston kautta haettuun valmiiseen ohjelmakoodiin. Lisäksi asetukset ovat tallessa taustapalvelimella mikäli ohjausohjelma päivitetään, tai ohjauslaite syystä tai toisesta vioittuu ja joudutaan vaihtamaan uuteen. Mikäli käytössä olisi skriptiohjaus missä asetukset on tallennettuna skriptin joukkoon, tulisi käyttäjäasetukset tehdä päivityksen yhteydessä aina uudelleen.
+Pörssärin etuna on helppokäyttöinen asetusten muokkaus. Käyttäjän ei tarvitse tehdä muutoksia Pörssärin Shelly-ohjelmakirjaston kautta haettuun valmiiseen ohjelmakoodiin. Lisäksi asetukset ovat tallessa taustapalvelimella, jos ohjausohjelma päivitetään tai ohjauslaite vaihdetaan uuteen.

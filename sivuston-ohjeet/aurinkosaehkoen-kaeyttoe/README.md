@@ -16,8 +16,8 @@ layout:
 
 Pörssäri tarjoaa mahdollisuuden aurinkosähkön tuottoennusteen hyödyntämiseen ohjattavien laitteiden ohjauksessa. Ohjauslogiikka pyrkii huolehtimaan siitä, että vuorokauden sisällä sähkön kokonaiskustannus on käyttäjälle mahdollisimman edullinen.
 
-Aurinkosähköennuste haetaan forecast.solar -palvelusta käyttäjän syöttämien koordinaattien mukaisesti. Aurinkoennuste päivitetään kuluvaa vuorokautta seuraavasta päivästä eteenpäin jotta jo toteutettuihin ohjauksiin ei tulisi muutoksia aurinkoennusteen päivittyessä.
+Aurinkosähköennuste haetaan forecast.solar-palvelusta käyttäjän syöttämien koordinaattien perusteella. Ennuste päivitetään kuluvaa vuorokautta seuraavasta päivästä alkaen, jotta ennusteen päivitys ei muuta jo toteutettuja ohjauksia.
 
-Ohjauskuorman asetuksissa halutaan haluttu tuntimäärä vuorokaudessa aurinkosähköä hyödyntävälle ohjaukselle. Kyseinen tuntimäärä kytketään aina vuorokauden sisällä päälle aurinkoennusteesta huolimatta. Mikäli aurinkopaneelit eivät tuota ollenkaan, kytketään vuorokauden edullisimmat tunnit päälle.
+Ohjauksen asetuksissa määritetään haluttu tuntimäärä vuorokaudessa. Tämä tuntimäärä toteutetaan aurinkoennusteesta riippumatta. Jos paneelit eivät tuota lainkaan, ohjaus käyttää vuorokauden edullisimpia tunteja.
 
-Aurinkosähköohjaus vaatii toimiakseen käyttöpaikkaan lisätyt aurinkovoimalat. Lisäksi hintalaskennan onnistumiseksi on tärkeää lisätä käyttöpaikalle mukautetut hinta-asetukset sähkön kokonaishinnan laskemista varten.
+Aurinkosähköohjaus vaatii toimiakseen käyttöpaikalle lisätyt aurinkovoimalat. Lisäksi hintalaskennan onnistumiseksi on tärkeää lisätä käyttöpaikalle mukautetut hinta-asetukset sähkön kokonaishinnan laskemista varten.

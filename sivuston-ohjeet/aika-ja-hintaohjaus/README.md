@@ -14,27 +14,16 @@ layout:
 
 # ➡️ Kuinka pääsen alkuun?
 
-Kirjaudu Pörssärin sovellukseen osoitteessa [https://porssari.fi/app/](https://porssari.fi/app/).
+Pörssärissä käyttöönoton järjestys on **käyttöpaikka ja rakennus → laite → ohjaukset → ohjausasetukset**. Esimerkeissä käyttöpaikka on **Testikiinteistö**, rakennus **Päärakennus**, laite **Testilaite** ja ohjaus **Lämminvesivaraaja**.
 
-Sovelluksen päänavigaatio:
+1. Avaa käyttäjävalikko ja valitse **Käyttöpaikat**-osiosta **Lisää käyttöpaikka**. Luo esimerkiksi Testikiinteistö. Pörssäri luo sille automaattisesti Päärakennuksen.
+2. Avaa **Laitteet** ja valitse **Lisää laite**. Valitse laitteellesi sopiva käyttöönotto-ohje: [Shelly](../../kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/shelly-ohjauksen-lisaeaeminen/), [Home Assistant](../../kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/home-assistant-ohjauksen-lisaeaeminen/) tai [pilvilaite](../../kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/pilvilaitteen-lisaeaeminen.md).
+3. Kun lisäät Home Assistantin tai mukautetun laitteen, valitse **Luo ohjaukset laitteen kanaville automaattisesti** ja kohderakennus. Pilvituonnissa rakennus valitaan laitekohtaisesti. Shellyn adoptiokoodipolussa ohjaukset syntyvät rekisteröityjen kanavien perusteella automaattisesti.
+4. Avaa **Ohjaukset**, valitse esimerkiksi Lämminvesivaraaja ja säädä sen **Ohjausasetukset**.
 
-* **Etusivu** — yhteenveto ja ohjausaikajana
-* **Ohjaukset** — ohjausten asetukset
-* **Laitteet** — laitteiden lisäys ja hallinta
-* **Aurinkosähkö** — aurinkovoimalat ja ennuste
-* **Asetukset** — käyttöpaikka, hinnat, rakennukset ja ilmoitukset
+Ohjausta ei tarvitse luoda erikseen ennen laitteen lisäämistä.
 
-Käyttöönotto etenee järjestyksessä:
+![Päärakennuksen ohjaukset Testikiinteistössä](../../.gitbook/assets/app-controls.png)
 
-1. Luo käyttöpaikka ja rakennus **Asetukset**-näkymässä
-2. Lisää ohjauslaite **Laitteet**-näkymässä
-3. Anna laitelisäyksessä luoda ohjaukset kanaville automaattisesti
-4. Säädä ohjausten asetukset **Ohjaukset**-näkymässä
 
-{% hint style="info" %}
-Erillistä “Lisää ohjaus” -vaihetta ei tarvita normaalikäytössä. Ohjaukset syntyvät laitteen lisäämisen yhteydessä, kun valitset automaattisen ohjausten luonnin.
-{% endhint %}
 
-{% hint style="info" %}
-Tarkemmat ohjeet laitteen lisäämiseksi löytyvät osiosta [Ohjauslaitteiden käyttöönotto](../../kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/).
-{% endhint %}

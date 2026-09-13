@@ -12,81 +12,91 @@ layout:
     visible: false
 ---
 
-# 🖥 Rajapintakuvaus
+# 🖥️ Rajapintakuvaus
 
-## Nykyinen laitepollaus (`json_version=3`)
+## Ohjauslaitteen kyselyrajapinta
 
-Laitteet hakevat ohjaustiedot allekirjoitetulla HTTP GET -kyselyllä:
+Nykyisten laiteasiakkaiden yhteensopivuusrajapinta on:
 
-`GET https://api.porssari.fi/api/v1/controls-legacy`
+```http
+GET /api/v1/controls-legacy
+```
 
-Pakollinen tunnisteparametri:
+Nimestään huolimatta `controls-legacy` on nykyisten laiteskriptien käytössä oleva yhteensopivuuspinta. Se ei käytä käyttäjän Bearer-tunnusta eikä vanhaa `getcontrols.php`-reittiä. Käytä aina `json_version=3`.
 
-* `device_mac` — laitteen tunniste isoilla kirjaimilla ilman erotinmerkkejä, esimerkiksi `A1B2C3D4E5F6` (12 merkkiä Shellylle; ei mallinimeä edessä)
+### Kyselyparametrit
 
-Laitteen todiste (device proof):
+| Parametri | Pakollinen | Kuvaus |
+| --- | --- | --- |
+| `device_mac` | kyllä | Laitetunniste; palvelu normalisoi arvon isoiksi kirjaimiksi. |
+| `timestamp` | kyllä | Laitetodisteen Unix-aikaleima. |
+| `nonce` | kyllä | Kertakäyttöinen 16–64 merkin satunnaisarvo. |
+| `signature` | kyllä | Pienillä heksamerkeillä esitetty HMAC-SHA256-todiste. |
+| `json_version` | ei | Oletus on `3`. Lähetä arvo `3` eksplisiittisesti; muut arvot hylätään. |
+| `last_request` | ei | Edellisen saadun ohjaustiedon Unix-aikaleima; oletus on `0`. |
+| `prices` | ei | Pyytää hintatietoja, jos käyttöoikeus sallii ne. |
+| `schedule_full_day` | ei | Käyttää koko paikallisen kalenteripäivän ohjausikkunaa. |
+| `cut_schedule` | ei | Rajaa palautettavien tulevien tilanvaihtojen enimmäismäärän (1–256). |
+| `json_channel_names` | ei | Sisällyttää kanavien nimet, kun ne ovat saatavilla. |
+| `timestamp_format` | ei | `unix` (oletus) tai `iso`. |
+| `headers` | ei | Palauttaa onnistuneessa status-only-kyselyssä tyhjän rungon. |
+| `script_version`, `client_fw`, `client_model` | ei | Asiakkaan versio- ja mallimetatiedot. |
 
-* `timestamp` — HMAC-todisteen aikaleima
-* `nonce` — 16–64 merkin nonce
-* `signature` — 64 merkin hex-HMAC-allekirjoitus
+### Allekirjoitettu laitetodiste
 
-Muita tärkeitä parametreja:
+Laite saa käyttöönotossa laitekohtaisen salaisuuden. Salaisuutta ei saa lähettää pyynnössä, kirjata lokiin tai julkaista. Jokaiselle kyselylle luodaan uusi aikaleima ja nonce.
 
-* `last_request` — edellisen onnistuneen vastauksen Unix-aikaleima (`0` jos ei vielä tallennettu)
-* `json_version=3` — ainoa tuettu JSON-versio tällä endpointilla
-* `prices` — sisällytä hintatiedot, jos tilillä on oikeus
-* `schedule_full_day` — käytä koko paikallisen vuorokauden ohjausikkunaa
-* `json_channel_names` — sisällytä kanavien nimet
-* `cut_schedule` — rajaa aikataulun pituutta
-* `script_version`, `client_fw`, `client_model` — asiakkaan metatiedot
-* `schedule_reason` — sisällytä aikataulun syy tarvittaessa
-* `headers` — status-only -polku
+Palvelu muodostaa kanonisen kyselymerkkijonon kaikista query-parametreista paitsi `signature`-parametrista. Avain–arvo-parit URL-koodataan RFC 3986 -tyyliin, `device_mac` korvataan normalisoidulla arvolla ja parit järjestetään avaimen sekä arvon mukaan. HMAC-SHA256:n syöte on UTF-8-muodossa seuraavat seitsemän riviä:
 
-Esimerkki (fiktiivinen, ilman kelvollista allekirjoitusta):
+```text
+GET
+/api/v1/controls-legacy
+<kanoninen-kysely-ilman-signaturea>
+<normalisoitu-device_mac>
+<timestamp>
+<nonce>
+<SHA-256-tyhjästä-pyynnön-rungosta>
+```
 
-`https://api.porssari.fi/api/v1/controls-legacy?device_mac=A1B2C3D4E5F6&last_request=0&json_version=3&timestamp=...&nonce=...&signature=...`
+Allekirjoitus on tämän syötteen HMAC-SHA256 laitteen salaisuudella, esitettynä 64-merkkisenä pienaakkosisena heksamerkkijonona. Aikaleiman pitää olla palveluympäristön sallitun aikapoikkeaman sisällä; oletusraja on viisi minuuttia. Nonce hyväksytään vain kerran, joten samaa allekirjoitettua pyyntöä ei voi toistaa.
 
-### Vastauskoodit
+Älä käytä toimivaa salaisuutta tai allekirjoitusta dokumentaatioesimerkissä. Asiakas toteuttaa kanonisoinnin ennen allekirjoituksen laskemista; parametreja ei saa muuttaa sen jälkeen.
 
-* **200** — ohjausdata (tai tyhjä body, jos `headers=true`)
-* **204** — laite löytyy, mutta valitussa ikkunassa ei ole ohjausrivejä
-* **304** — laitteella on jo riittävän tuore vastaus
-* **401** — todiste puuttuu
-* **403** — todiste virheellinen, vanhentunut, uudelleenkäytetty tai väärälle laitteelle
-* **404** — tuntematon laite
-* **422** — virheelliset parametrit
-* **425** — kyselyväli liian lyhyt
-* **429** — tuntikohtainen kyselyraja ylitetty
-* **503** — rate limiter / replay-suoja ei käytettävissä (tuotannossa fail-closed)
+### Vastaus
 
-Onnistunut JSON-vastaus palautetaan juurena ilman erillistä success-envelopea. Esimerkkirakenne (yksinkertaistettu):
+Onnistunut `200`-vastaus on suoraan JSON-objekti (ei yleistä response-envelopea):
 
 ```json
 {
   "metadata": {
-    "mac": "A1B2C3D4E5F6",
-    "channels": [0],
-    "fetch_url": "https://api.porssari.fi/api/v1/controls-legacy",
-    "timestamp": 1702821684,
-    "valid_until": 1702940100,
+    "mac": "ESIMERKKILAITE",
+    "channels": [1],
+    "fetch_url": "https://example.invalid/api/v1/controls-legacy",
+    "timestamp": 1735689600,
+    "valid_until": 1735776000,
     "json_version": 3
   },
-  "controls": [
-    {
-      "id": 1,
-      "name": "example",
-      "state": 0,
-      "schedules": [
-        { "timestamp": 1702850368, "state": 1 },
-        { "timestamp": 1702853976, "state": 0 }
-      ]
-    }
-  ]
+  "ch_data": [
+    {"id": "1", "name": "Lämminvesivaraaja", "updated": 1735689500, "state": "0", "failsafe": []}
+  ],
+  "controls": [[1735693200, 1, 1], [1735696800, 1, 0]]
 }
 ```
 
-Älä julkaise käyttökelpoisia heartbeat-salaisuuksia tai allekirjoitettuja pyyntöjä.
+`controls` sisältää rivejä muodossa `[aikaleima, kanava, tila]`. Kun `prices=true` on sallittu ja hintatietoa on saatavana, vastaus voi sisältää lisäksi `prices`-objektin.
 
-## Vanha PHP-rajapinta (legacy)
+### Tila- ja virhekoodit
 
-Vanha `https://api.porssari.fi/getcontrols.php` -kuvaus on korvattu yllä olevalla FastAPI-sopimuksella. Uudet integraatiot tulee tehdä `GET /api/v1/controls-legacy` -rajapintaan `json_version=3` -muodossa.
+| Tila | Merkitys |
+| --- | --- |
+| `200` | Ohjaustiedot palautettiin. `headers=true` voi palauttaa tyhjän rungon. |
+| `204` | Laitteelle ei ole ohjausrivejä valitussa ikkunassa. |
+| `304` | Laitteella on jo riittävän tuore ohjaustieto `last_request`-arvon perusteella. |
+| `401` | Laitetodiste puuttuu. |
+| `403` | Laite tai todistus on virheellinen, vanhentunut tai nonce on käytetty aiemmin. |
+| `422` | Parametrien muoto tai arvo on virheellinen, esimerkiksi muu JSON-versio kuin 3. |
+| `425` | Kyselyväli on liian lyhyt. |
+| `429` | Kyselymäärä on ylittänyt rajan; vastaus voi sisältää `Retry-After`-otsakkeen. |
+| `503` | Todisteen toistonesto tai nopeusrajoitus ei ole käytettävissä. |
+
+Käsittele `304` ja `204` normaalina tilana, säilytä edellinen kelvollinen ohjaus turvallisesti ja noudata `Retry-After`-otsaketta. Rajapinta on tarkoitettu laiteasiakkaille, ei yleiseksi hintadata- tai käyttäjärajapinnaksi.

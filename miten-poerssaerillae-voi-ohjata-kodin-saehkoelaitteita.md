@@ -16,10 +16,10 @@ layout:
 
 Yksinkertaisimmillaan Pörssärin ohjausehdoissa voidaan määrittää sähkölaitteelle, esimerkiksi lämminvesivaraajalle, vuorokauden sisällä haluttu tuntimäärä minkä laite on kytkettynä päälle. Pörssäri katkoo ohjauskontaktorin kautta tulevaa sähkönsyöttöä esimerkiksi aiemman yösähköohjauksen rinnalle asennetun Shellyn avulla.
 
-Ohjaus on mahdollista valita vain osalle vuorokaudesta, eli mahdollisuus on esimerkiksi sähköauton latauslaitteen ohjaukseen siten, että yöaikaan etsitään aina haluttu määrä edullsimpia tunteja. Tämä sopii erityisesti lataushybridien kanssa, jotka vaativat latausta käytännössä joka yö.
+Ohjaus voidaan rajata vain osalle vuorokaudesta. Esimerkiksi sähköauton lataukselle voidaan etsiä yöajalta haluttu määrä edullisimpia tunteja. Tämä sopii erityisesti lataushybrideille, jotka vaativat latausta käytännössä joka yö.
 
 Ohjaus on mahdollista aktivoida myös sähkön hintatietojen perusteella. Myös hintatieto-ohjaus voidaan asettaa vain osaan vuorokauden tunneista.
 
-Lämmityksen ohjaus ulkolämpötilaennusteeseen perustuen arvioi talon lämmitysenergian tarpeen 3-12h jaksolle, ja kytkee tarvittavan määrän 15 minuutin ohjausjaksoja päälle jotta talon lämmitystarve tulee täytetyksi. Vaikka et ohjaisi varsinaista päälämmityslaitetta Pörssärillä, voit silti ohjata "varajärjestelmät" (esimerkiksi oljykattilan sähkövastus, sähköpatterit/lattialämmitys ilmalämpöpumpun yhteydessä) päälle vain tarpeen mukaan.
+Ulkolämpötilaennusteeseen perustuva lämmitysohjaus arvioi rakennuksen lämmitysenergian tarpeen 3–12 tunnin jaksolle ja kytkee tarvittavan määrän 15 minuutin ohjausjaksoja päälle. Vaikka et ohjaisi varsinaista päälämmityslaitetta Pörssärillä, voit ohjata varajärjestelmiä, kuten öljykattilan sähkövastusta, sähköpattereita tai lattialämmitystä, päälle vain tarpeen mukaan.
 
-Pörssäri mahdollistaa myös kiinteistöön asennetun aurinkovoimalan hyödyntämisen ohjausten laskennassa. Pörssäri ei pyri käyttämään joka päivä kaikkea tuotettua aurinkosähköä itse, vaan aurinkoennusteen sekä sähkönhinnan perusteella arvioidaan kannattaako sähkölaitteita kytkeä päälle edullisen sähkönhinnan aikaan, oman sähköntuotannon ollessa parhaimmillaan vai jokin yhdistemä näiden väliltä.
+Pörssäri voi hyödyntää rakennukseen asennetun aurinkovoimalan tuotantoennustetta ohjausten laskennassa. Aurinkoennusteen ja sähkön hinnan perusteella arvioidaan, kannattaako laitteita kytkeä päälle edullisen sähkön aikaan, oman tuotannon ollessa parhaimmillaan vai näiden yhdistelmänä.

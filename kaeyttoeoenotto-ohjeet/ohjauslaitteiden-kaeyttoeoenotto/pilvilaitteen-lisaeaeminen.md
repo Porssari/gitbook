@@ -1,23 +1,10 @@
 # Pilvilaitteen lisääminen
 
-Pilvilaitteet lisätään Pörssäriin **Laitteet**-näkymästä.
+Pörssärin julkisesti tuetut pilvipalvelut ovat **Sensibo** ja **Themo**. Muita palveluita, kuten MELCloud, MELCloud Home, Ebeco tai Tuya, voi olla saatavilla esikatseluominaisuuksina. Lisää pilvilaite sovelluksessa polulla **Laitteet → Lisää laite → Pilvipalvelu**.
 
-1. Avaa [https://porssari.fi/app/](https://porssari.fi/app/) ja siirry **Laitteet**-näkymään.
-2. Paina **Lisää laite**.
-3. Valitse **Pilvipalvelu**.
-4. Valitse palvelu ja yhdistä tili.
-5. Hae laitteet.
-6. Valitse lisättävät laitteet, anna tarvittaessa nimet, valitse ohjaustapa ja rakennus.
-7. Lisää valitut laitteet.
+1. Valitse Sensibo tai Themo ja yhdistä oma tilisi. Sensibo-yhteys tehdään palvelun API-avaimella. Themo-yhteys tehdään palvelun käyttäjätunnuksella ja salasanalla. Syötä tunnukset vain Pörssärin yhdistämislomakkeeseen; älä lähetä niitä sähköpostilla tai tallenna niitä dokumentaatioon.
+2. Kun yhteys on muodostettu, valitse **Hae laitteet**. Pörssäri hakee vain valitsemasi pilvipalvelun tilillä näkyvät laitteet.
+3. Valitse lisättävät laitteet. Anna jokaiselle selkeä nimi, esimerkiksi **Testilaite**, ja valitse kohderakennukseksi esimerkiksi **Päärakennus** käyttöpaikalla **Testikiinteistö**. Valitse ohjaustavaksi **Termostaatti**, jos laite tukee lämpötilan asetusarvon ohjausta, tai **Rele**, jos ohjaus on päälle/pois-tyyppinen.
+4. Valitse **Lisää valitut laitteet**. Avaa lopuksi **Ohjaukset** ja tarkista, että lisätyille laitteille syntyneet ohjaukset ovat oikeassa rakennuksessa.
 
-Yleisesti saatavilla olevia palveluita ovat esimerkiksi **Sensibo** ja **Themo**. Muita palveluita, kuten MELCloud, MELCloud Home, Ebeco tai Tuya, voi olla saatavilla esikatseluominaisuuksina.
-
-Pilviyhteyksiä voit hallita myöhemmin käyttäjävalikon **Pilviyhteydet**-osiossa.
-
-{% hint style="info" %}
-Ohjaukset syntyvät yleensä laitteen lisäämisen yhteydessä, kun valitset automaattisen ohjausten luonnin. Erillistä “Lisää ohjaus” -vaihetta ei normaalisti tarvita.
-{% endhint %}
-
-{% hint style="info" %}
-Alla oleva laitelistakuva on esimerkki käyttöliittymästä mallisisällöllä. Oikeassa käytössä lista tulee yhdistetystä pilvitilistäsi.
-{% endhint %}
+Pilviyhteyksiä hallitaan käyttäjävalikon kohdasta **Pilviyhteydet**. Poista tai yhdistä yhteys uudelleen siellä, jos haluat vaihtaa kyseisen pilvipalvelun tunnukset. Yhteyden poistaminen ei korvaa jo lisättyjen laitteiden ohjausasetusten tarkistamista, joten tarkista laitteiden tila muutoksen jälkeen.

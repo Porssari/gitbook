@@ -1,13 +1,11 @@
-# Ohjausten asetukset
+# Ohjaukset ja ohjausasetukset
 
-Kun käyttöpaikka on luotu, lisää sille tarvittaessa **rakennus** Asetukset-näkymässä. Rakennus vastaa erillistä ryhmäkeskusta, esimerkiksi päärakennusta tai autotallia. Jos käyttöpaikalla on vain yksi mittauskeskus, yksi rakennus riittää.
+Home Assistantia tai mukautettua laitetta lisättäessä valinta **Luo ohjaukset laitteen kanaville automaattisesti** luo laitteen kanaville ohjaukset valittuun rakennukseen. Pilvilaitteen tuonnissa rakennus valitaan laitekohtaisesti. Shellyn adoptiokoodipolussa ohjaukset syntyvät rekisteröityjen kanavien perusteella automaattisesti. Avaa sovelluksen **Ohjaukset** ja valitse esimerkiksi Päärakennuksen **Lämminvesivaraaja**.
 
-Ohjaukset syntyvät yleensä laitteen lisäämisen yhteydessä, kun valitset **Luo ohjaukset laitteen kanaville automaattisesti** ja kohderakennuksen. Tämän jälkeen säädät ohjauksia **Ohjaukset**-näkymässä.
+![Päärakennuksen automaattisesti luodut ohjaukset](../../.gitbook/assets/app-controls.png)
 
-1. Avaa **Ohjaukset**.
-2. Valitse haluttu ohjaus.
-3. Avaa **Ohjausasetukset**.
-4. Säädä esimerkiksi hintaohjaus, aikaohjaus, prioriteetti ja muut ohjauskohtaiset asetukset.
-5. Tallenna asetukset.
+Valitun ohjauksen **Ohjausasetukset**-näkymässä määritetään ohjaustapa ja sen tarvitsemat arvot, kuten käyttöaika, tuntimäärä, hintaraja tai lämmitykseen liittyvät asetukset. Tallenna muutokset ja tarkista, että ohjaus näkyy ohjausten listalla oikeassa rakennuksessa.
 
-Lämmitykseen liittyvät asetukset ja aurinkosähkön hyödyntäminen ohjauksessa kuvataan omissa ohjeissaan.
+![Lämminvesivaraajan ohjausasetukset ja ohjausjakso](../../.gitbook/assets/app-control-settings.png)
+
+Lisää laite ennen ohjausta. Tarkista laitelisäyksen jälkeen **Ohjaukset**-näkymästä, että laitteen kanaville syntyneet ohjaukset ovat oikeassa rakennuksessa.

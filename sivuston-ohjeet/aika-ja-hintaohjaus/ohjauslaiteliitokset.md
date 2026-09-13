@@ -1,7 +1,5 @@
 # Ohjauslaiteliitokset
 
-Erillistä ohjauslaiteliitosta ei normaalisti tarvitse tehdä jälkikäteen.
+Tämä sivu säilyy vanhojen linkkien yhteensopivuuden vuoksi. Nykyisessä sovelluksessa laitekanavan liitos syntyy laitetta lisättäessä: avaa **Laitteet → Lisää laite**, käytä laitteelle tarkoitettua lisäystapaa ja tarkista syntyneet ohjaukset. Muokkaa tämän jälkeen ohjausta **Ohjaukset**-näkymässä.
 
-Kun lisäät laitteen **Laitteet**-näkymässä ja valitset automaattisen ohjausten luonnin, ohjaukset ja kanavaliitokset syntyvät lisäyksen yhteydessä. Tämän jälkeen voit tarkastella ja tarvittaessa muuttaa liitoksia ohjauksen **Ohjausasetukset**-näkymässä kohdassa ohjauslaiteliitokset.
-
-Jos et ole vielä lisännyt laitetta, tee se ensin osiossa [Ohjauslaitteiden käyttöönotto](../../kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/).
+Katso [aloitusohje](README.md) ja [laitteiden käyttöönotto](../../kaeyttoeoenotto-ohjeet/ohjauslaitteiden-kaeyttoeoenotto/README.md).
