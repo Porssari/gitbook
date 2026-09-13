@@ -28,7 +28,7 @@ Nimestään huolimatta `controls-legacy` on nykyisten laiteskriptien käytössä
 
 | Parametri | Pakollinen | Kuvaus |
 | --- | --- | --- |
-| `device_mac` | kyllä | Laitetunniste; palvelu normalisoi arvon isoiksi kirjaimiksi. |
+| `device_mac` | kyllä | Laitetunniste isoilla kirjaimilla ilman erotinmerkkejä. Shellylle 12-merkkinen Device ID ilman mallinimeä, esimerkiksi `AABBCCDDEEFF` eikä `shellyplus1pm-AABBCCDDEEFF`. Palvelu normalisoi arvon isoiksi kirjaimiksi. |
 | `timestamp` | kyllä | Laitetodisteen Unix-aikaleima. |
 | `nonce` | kyllä | Kertakäyttöinen 16–64 merkin satunnaisarvo. |
 | `signature` | kyllä | Pienillä heksamerkeillä esitetty HMAC-SHA256-todiste. |

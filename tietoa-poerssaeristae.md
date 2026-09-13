@@ -68,7 +68,7 @@ Sivuston ja laitetietokannan hallinnassa käytetään hyviä tietoturvakäytänt
 
 Palvelu tarvitsee käyttäjätilin ja ohjausten asetukset. Rekisteröityessä pakollisena tietona kerätään sähköpostiosoite; käyttäjä voi lisäksi lisätä nimensä. Käyttöpaikan sijaintitietoja voidaan tarvita sää- tai aurinkoennustetta käyttäville ohjauksille. Käyttäjätiedot ja ohjaustiedot sijaitsevat toisistaan erillisissä tietokannoissa, eikä ohjaustietokannassa säilytetä käyttäjän tunnistetietoja.
 
-Älä julkaise laitetunnisteita, adoptiokoodeja tai pilvipalvelujen tunnuksia. Kyselyn suorittavan laitteen julkinen IP-osoite voidaan tallentaa tietokantaan palvelinkyselyiden määrän hallinnassa.
+Älä julkaise laitetunnisteita tai pilvipalvelujen tunnuksia. Shellyn tunniste on 12-merkkinen Device ID ilman mallinimeä. Kyselyn suorittavan laitteen julkinen IP-osoite voidaan tallentaa tietokantaan palvelinkyselyiden määrän hallinnassa.
 
 ### Saako palvelua käyttää VPN-yhteyden tai välityspalvelimen kautta?
 

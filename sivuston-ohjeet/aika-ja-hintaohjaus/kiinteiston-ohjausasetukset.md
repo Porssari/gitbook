@@ -1,6 +1,6 @@
 # Ohjaukset ja ohjausasetukset
 
-Home Assistantia tai mukautettua laitetta lisättäessä valinta **Luo ohjaukset laitteen kanaville automaattisesti** luo laitteen kanaville ohjaukset valittuun rakennukseen. Pilvilaitteen tuonnissa rakennus valitaan laitekohtaisesti. Shellyn adoptiokoodipolussa ohjaukset syntyvät rekisteröityjen kanavien perusteella automaattisesti. Avaa sovelluksen **Ohjaukset** ja valitse esimerkiksi Päärakennuksen **Lämminvesivaraaja**.
+Shellyä, Home Assistantia tai mukautettua laitetta lisättäessä valinta **Luo ohjaukset laitteen kanaville automaattisesti** luo laitteen kanaville ohjaukset valittuun rakennukseen. Shelly lisätään manuaalisena laitteena 12-merkkisellä Device ID:llä ilman mallinimeä. Pilvilaitteen tuonnissa rakennus valitaan laitekohtaisesti. Avaa sovelluksen **Ohjaukset** ja valitse esimerkiksi Päärakennuksen **Lämminvesivaraaja**.
 
 ![Päärakennuksen automaattisesti luodut ohjaukset](../../.gitbook/assets/app-controls.png)
 

@@ -1,19 +1,14 @@
 # Shelly-ohjauksen lisääminen
 
-Shelly voidaan lisätä Pörssäriin kahdella tavalla:
+Tämän oppaan avulla saat lisättyä Shelly-laitteesi Pörssäri-tilille.
 
-- **Adoptiokoodilla**, joka on ensisijainen ja helpoin tapa uudelle laitteelle.
-- **Manuaalisena laitteena**, kun laitteen tunniste ja kanavamäärä halutaan antaa itse.
+Yhdistä Shelly ensin kotiverkkoosi valmistajan ohjeen mukaan. Oppaan läpikäymiseksi sinulla tulee olla tiedossa Shellyn IP-osoite omassa kotiverkossa sekä Shellyn **12-merkkinen laitetunnus**.
 
-Yhdistä Shelly ensin kotiverkkoosi valmistajan ohjeen mukaan ja asenna laitteeseen Pörssärin nykyinen ohjausskripti.
+Shelly lisätään Pörssäriin **manuaalisena laitteena**.
 
 {% hint style="info" %}
-Adoptiokoodi edellyttää Pörssäri-skriptiversiota, jossa Shellyn käyttöliittymässä näkyy kenttä **porssari_adoption_code**. Jos kenttää ei näy, päivitä skripti käyttöympäristöllesi julkaistuun adoptiokoodia tukevaan versioon ennen jatkamista. Älä lisää koodia muokkaamalla skriptin lähdekoodia.
+**Shelly-adoptointi (adoptiokoodi)** voi näkyä Lisää laite -valikossa, mutta ominaisuus ei ole tällä hetkellä käytössä. Älä käytä adoptiokoodia; lisää laite manuaalisesti.
 {% endhint %}
-
-Jos käyttöpaikallesi löytyy laite ennen adoptiokoodin luontia, voit valita **Laitteet → Lisää laite → Tälle käyttöpaikalle löydetyt laitteet**, nimetä laitteen ja viimeistellä lisäyksen. Tämä on vaihtoehtoinen polku; adoptiokoodi on ensisijainen tapa.
-
-Kun laite on adoptoitu, Pörssäri luo sen rekisteröidyille kanaville ohjaukset automaattisesti.
 
 {% content-ref url="laitteen-lisaeaeminen-poerssaeri-sivustolle/" %}
 [laitteen-lisaeaeminen-poerssaeri-sivustolle](laitteen-lisaeaeminen-poerssaeri-sivustolle/)

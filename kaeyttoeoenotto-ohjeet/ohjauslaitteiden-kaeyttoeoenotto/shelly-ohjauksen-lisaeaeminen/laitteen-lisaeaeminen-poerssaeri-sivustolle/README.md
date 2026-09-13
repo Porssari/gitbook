@@ -1,3 +1,7 @@
 # Laitteen lisääminen Pörssäriin
 
-Tässä osiossa luodaan Shellylle adoptiokoodi, lisätään se Shellyn Pörssäri-skriptiin ja tarkistetaan, että laite ja automaattisesti luodut ohjaukset näkyvät sovelluksessa.
+Tämän oppaan avulla saat liitettyä Shelly-laitteen omalle Pörssäri-tilillesi manuaalisesti.
+
+{% hint style="info" %}
+Adoptiokoodi voi näkyä Lisää laite -valikossa, mutta se ei ole tällä hetkellä käytössä. Käytä manuaalista lisäystä.
+{% endhint %}
