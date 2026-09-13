@@ -16,7 +16,7 @@ layout:
 
 ### Onko Pörssäri luotettava palvelu?
 
-Pörssäri on harrastepohjalta rakennettu palvelu, joka on ensisijaisesti tehty omiin käyttötarpeisiin. Emme lupaa suoraa asiakastukea, mutta ongelmatilanteita pyritään mahdollisuuksien mukaan ratkaisemaan yhteistyössä käyttäjien kanssa. Ongelmatilanteiden varalle sivustolta löytyy yhteydenottolomake, ja lisäksi tukea voi pyytää sähköpostitse osoitteesta info(at)porssari.fi.&#x20;
+Pörssäri on harrastepohjalta rakennettu palvelu, joka on ensisijaisesti tehty omiin käyttötarpeisiin. Emme lupaa suoraa asiakastukea, mutta ongelmatilanteita pyritään mahdollisuuksien mukaan ratkaisemaan yhteistyössä käyttäjien kanssa. Ongelmatilanteiden varalle sivustolta löytyy yhteydenottolomake, ja lisäksi tukea voi pyytää sähköpostitse osoitteesta info(at)porssari.fi.
 
 Pörssäri on käyttäjälle maksuton kaikkien käytettävissä olevien ominaisuuksien osalta nyt ja aina tulevaisuudessa.
 
@@ -24,9 +24,9 @@ Pörssäri on käyttäjälle maksuton kaikkien käytettävissä olevien ominaisu
 
 Pörssäri hakee sähkön Spot-hintatiedot ensisijaisesti ENTSO-E -rajapinnasta. Varapalveluna käytetään Eleringin tarjoamaa rajapintaa.
 
-### Miksi Pörssärissä ei näytetä sähkön hintatietoja?
+### Miksi Pörssärissä ei näytetä sähkön hintatietoja kaikille?
 
-Sähkön hintatietoja ei näytetä käyttäjälle, koska NordPoolin lisenssiehdot kieltävät hintatietojen uudelleenjulkaisun ilman tuhansia euroja maksavaa vuosilisenssiä. NordPool on antanut Pörssäri-palvelulle hyväksynnän hintatietojen käsittelyyn ilman lisenssiä sillä ehdolla, että käyttäjällä ei ole pääsyä hintatietoihin. Emme pystyisi tarjoamaan ilmaispalvelua ilman NordPoolin hyväksyntää lisenssittömälle hintatietojen käytölle.
+Sähkön hintatietojen uudelleenjulkaisu on Nord Poolin lisenssiehdoilla rajoitettua. Hintojen näkyvyys sovelluksessa riippuu käyttäjätilin oikeuksista. Emme pystyisi tarjoamaan ilmaispalvelua ilman Nord Poolin hyväksyntää lisenssittömälle hintatietojen käytölle.
 
 ### Miksi Pörssäriin täytyy rekisteröityä?
 
@@ -36,7 +36,7 @@ Rekisteröityminen on maksutonta, sen voi tehdä halutessaan myös anonyymisti j
 
 ### Voinko testata palvelun käyttöä?
 
-Pörssäri-sivustolle rekisteröityminen on maksutonta. Voit vapaasti kokeilla Pörssäri-palvelua haluamasi ajan. Mikäli et halua jatkaa palvelun käyttöä, voit pyytää käyttäjätilisi poistamista sivuston palautelomakkeen kautta.
+Rekisteröityminen osoitteessa [https://porssari.fi/app/](https://porssari.fi/app/) on maksutonta. Voit vapaasti kokeilla Pörssäri-palvelua haluamasi ajan. Mikäli et halua jatkaa palvelun käyttöä, voit pyytää käyttäjätilisi poistamista sivuston palautelomakkeen kautta.
 
 ### Tarvitseeko minun käyttää Shelly Cloud -palvelua?
 
@@ -54,21 +54,19 @@ Pörssärin käyttö on nyt ja tulevaisuudessa maksutonta. Kyseessä on harraste
 
 ### Onko Pörssärin käyttö turvallista?
 
-Sivuston ja laitetietokannan hallinnassa käytetään parhaita mahdollisia tietoturvakäytäntöjä. Ylläpitäjien käyttäjätilit on suojattu 2-vaiheisella tunnistautumisella. Myös käyttäjien on mahdollista ottaa käyttäjäprofiilin asetuksissa 2-vaiheinen tunnistautuminen itselleen käyttöön Google Authenticator -sovellukseen perustuen. Pörssärin asetushallinta sekä käyttäjänhallinta perustuvat turvalliseen avoimen lähdekoodin Joomla-sisällönhallintajärjestelmän uusimpaan versioon.
+Sivuston ja laitetietokannan hallinnassa käytetään hyviä tietoturvakäytäntöjä. Ylläpitäjien käyttäjätilit on suojattu monivaiheisella tunnistautumisella. Käyttäjä voi ottaa tilillään käyttöön esimerkiksi salasanan, kertakäyttökoodin, Google-kirjautumisen, TOTP-sovelluksen tai WebAuthn-/passkey-tunnistautumisen sen mukaan, mitä tilille on otettu käyttöön.
 
-Palvelimelta ei ole yhteyttä käyttäjän kotiverkossa oleviin laitteisiin suoraan, vaan ne hakevat ohjaustiedon REST-json -rajapintaa käyttäen.
+Palvelimelta ei ole yhteyttä käyttäjän kotiverkossa oleviin laitteisiin suoraan, vaan ne hakevat ohjaustiedon REST-JSON -rajapintaa käyttäen.
 
 Ulkoisten ohjauspalvelinten käyttäjätunnukset, salasanat ja api-tunnisteet säilytetään Pörssärin ohjaustietokannassa vahvasti salattuina.
 
 ### Mitä tietoja minusta kerätään?
 
-Pörssäri kerää käyttäjältä rekisteröityessä pakollisina tietoina sähköpostiosoitteen, sekä lisäksi käyttäjä voi lisätä oman nimensä palveluun.&#x20;
+Pörssäri kerää käyttäjältä rekisteröityessä pakollisina tietoina sähköpostiosoitteen, sekä lisäksi käyttäjä voi lisätä oman nimensä palveluun.
 
-Älykkään lämmityslaiteohjauksen ja aurinkosähköennusteen käyttämiseksi käyttäjän tulee syöttää ohjattavan kiinteistön sijaintitiedot paikallisen sääennustedatan hakemisen mahdollistamiseksi. Käyttäjätiedot ja ohjaustiedot sijaitsevat toisistaan erillisissä tietokannoissa eikä ohjaustietokannassa säilytetä käyttäjän tunnistetietoja.
+Älykkään lämmityslaiteohjauksen ja aurinkosähköennusteen käyttämiseksi käyttäjän tulee syöttää ohjattavan käyttöpaikan sijaintitiedot paikallisen sääennustedatan hakemisen mahdollistamiseksi. Käyttäjätiedot ja ohjaustiedot sijaitsevat toisistaan erillisissä tietokannoissa eikä ohjaustietokannassa säilytetä käyttäjän tunnistetietoja.
 
-Shelly-laitteen tunnisteena käytetään automaattisesti Shellyn laitetunnistetta. Kyselyn suorittavan laitteen julkinen ip-osoite tallennetaan tietokantaan ja sitä käytetään palvelinkyselyiden määrän hallinnassa.
-
-Mikäli käytössä on Telegram-yhteysvahti, käyttäjän Telegram-palveluun tallentama etunimi tallennetaan tietokantaan.
+Shelly-laitteen tunnisteena käytetään Shellyn 12-merkkistä laitetunnusta. Kyselyn suorittavan laitteen julkinen ip-osoite voidaan tallentaa tietokantaan palvelinkyselyiden määrän hallinnassa.
 
 ### Saako palvelua käyttää VPN-yhteyden tai välityspalvelimen kautta?
 
@@ -76,6 +74,4 @@ Käyttöehdoissamme ei kielletä palvelun käyttöä VPN-yhteyden tai välityspa
 
 ### Ylläpidetäänkö Pörssäriä pitkäaikaisesti?
 
-Pörssäri-palvelu tulee olemaan käytettävissä pitkäaikaisesti sivuston omistajien omien laitteiden hallinnan vuoksi. Mikäli tulevaisuudessa Pörssärin aktiivinen ylläpito päättyisi, tultaisiin sekä ohjauslogiikkaan liittyvät palvelintiedostot että kattava dokumentaatio ohjauslogiikasta mukaanlukien tietokantaparametrien käyttö jakamaan sekä Github- että Confluence-palveluiden kautta julkisesti saataville.
-
-Ohjausrajapinta perustuu php-pohjaiseen järjestelmään sekä sql-tietokantaan, joten se on tarvittaessa helposti pystytettävissä esimerkiksi omalle kotipalvelimelle. Asetusten muuttamiseen ei tällaisessa tilanteessa tarvita myöskään www-pohjaista käyttöliittymää, vaan muutokset voidaan tehdä myös suoraan tietokantaan.
+Pörssäri-palvelu tulee olemaan käytettävissä pitkäaikaisesti sivuston omistajien omien laitteiden hallinnan vuoksi. Mikäli tulevaisuudessa Pörssärin aktiivinen ylläpito päättyisi, tultaisiin sekä ohjauslogiikkaan liittyvät palvelintiedostot että kattava dokumentaatio ohjauslogiikasta mukaanlukien tietokantaparametrien käyttö jakamaan julkisesti saataville.

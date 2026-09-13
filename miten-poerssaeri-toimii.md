@@ -10,7 +10,7 @@ Ohjaustieto lähetetään laitteeseen:
 
 Tavanomaisiin ns. pilvipalveluihin tai muihin Shellyn ohjausskripteihin verrattuna Pörssärin ohjaus ei vaadi jatkuvaa internet-yhteyttä. Ohjaustieto talletetaan paikalliseen muistiin aina koko sähkön hintatietojen ajaksi, eli vähintään kuluvan vuorokauden loppuun saakka.
 
-Käyttäjäasetuksia voidaan muuttaa mistä tahansa sijainnista internet-yhteyden välityksellä. Pörssärin kautta ei kuitenkaan ole pääsyä käyttäjän kotiverkkoon, sillä ohjaustieto palautetaan vastauksena ohjauslaitteen suorittamaan kyselyyn. Pörssäri ei tarvitse toimiakseen Shellyn Cloud -ominaisuutta, mutta sen käytölle ei myöskään ole mitään estettä.
+Käyttäjäasetuksia voidaan muuttaa mistä tahansa sijainnista internet-yhteyden välityksellä osoitteessa [https://porssari.fi/app/](https://porssari.fi/app/). Pörssärin kautta ei kuitenkaan ole pääsyä käyttäjän kotiverkkoon, sillä ohjaustieto palautetaan vastauksena ohjauslaitteen suorittamaan kyselyyn. Pörssäri ei tarvitse toimiakseen Shellyn Cloud -ominaisuutta, mutta sen käytölle ei myöskään ole mitään estettä.
 
 <figure><img src=".gitbook/assets/toimintakaavio.png" alt=""><figcaption></figcaption></figure>
 

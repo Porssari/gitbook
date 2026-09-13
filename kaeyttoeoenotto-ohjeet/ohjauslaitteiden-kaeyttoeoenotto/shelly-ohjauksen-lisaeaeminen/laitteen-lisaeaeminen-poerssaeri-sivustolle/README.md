@@ -1,3 +1,3 @@
-# Laitteen lisääminen Pörssäri-sivustolle
+# Laitteen lisääminen Pörssäriin
 
-Tämän oppaan avulla saat liitettyä laitteen omalle Pörssäri-tilillesi.
+Tämän oppaan avulla saat liitettyä Shelly-laitteen omalle Pörssäri-tilillesi manuaalisesti.

@@ -20,4 +20,4 @@ Aurinkosähköennuste haetaan forecast.solar -palvelusta käyttäjän syöttämi
 
 Ohjauskuorman asetuksissa halutaan haluttu tuntimäärä vuorokaudessa aurinkosähköä hyödyntävälle ohjaukselle. Kyseinen tuntimäärä kytketään aina vuorokauden sisällä päälle aurinkoennusteesta huolimatta. Mikäli aurinkopaneelit eivät tuota ollenkaan, kytketään vuorokauden edullisimmat tunnit päälle.
 
-Aurinkosähköohjaus vaatii toimiakseen kiinteistöön lisätyt aurinkovoimalat. Lisäksi hintalaskennan onnistumiseksi on tärkeää lisätä kiinteistölle mukautetut hinta-asetukset sähkön kokonaishinnan laskemista varten.
+Aurinkosähköohjaus vaatii toimiakseen käyttöpaikkaan lisätyt aurinkovoimalat. Lisäksi hintalaskennan onnistumiseksi on tärkeää lisätä käyttöpaikalle mukautetut hinta-asetukset sähkön kokonaishinnan laskemista varten.

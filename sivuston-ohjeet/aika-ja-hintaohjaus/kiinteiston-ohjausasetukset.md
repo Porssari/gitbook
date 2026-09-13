@@ -1,7 +1,13 @@
-# Kiinteistön ohjausasetukset
+# Ohjausten asetukset
 
-Varsinaisia ohjausasetuksia pääset tekemään kiinteistölle valitsemalla "Ohjausasetukset". Mikäli kyseessä on uusi kiinteistö, tulee ensimmäiseksi luoda kiinteistölle "Rakennus". Rakennus kuvastaa erillisiä ryhmäkeskuksia, jollaisia voi olla esimerkiksi päärakennus sekä autotalli. Mikäli kiinteistölläsi on vain yksi mittauskeskus, luodaan kiinteistöön vain yksi rakennus.
+Kun käyttöpaikka on luotu, lisää sille tarvittaessa **rakennus** Asetukset-näkymässä. Rakennus vastaa erillistä ryhmäkeskusta, esimerkiksi päärakennusta tai autotallia. Jos käyttöpaikalla on vain yksi mittauskeskus, yksi rakennus riittää.
 
-Kun olet luonut rakennuksen, pääset luomaan varsinaisia ohjauskuormia. Mikäli haluat yksinkertaisen tuntimäärään perustuvan lämminvesivaraajan ohjauksen, onnistuu tämä helpoiten "Lämmitysasetukset" -osiossa. Kyseisestä osiosta pääset myös luomaan[ lämmitysjärjestelmiä joiden päälläoloaika vaihtelee ulkolämpötilaennusteen mukaan](../laemmityksen-ohjaus/).
+Ohjaukset syntyvät yleensä laitteen lisäämisen yhteydessä, kun valitset **Luo ohjaukset laitteen kanaville automaattisesti** ja kohderakennuksen. Tämän jälkeen säädät ohjauksia **Ohjaukset**-näkymässä.
 
-Osiossa "Muut ohjausasetukset" pääset luomaan ohjausehtoja tuntimäärän perusteella, sähkön hintatietojen perusteella sekä aktivoimaan aurinkosähköennustetta hyödyntävän ohjausmuodon.
+1. Avaa **Ohjaukset**.
+2. Valitse haluttu ohjaus.
+3. Avaa **Ohjausasetukset**.
+4. Säädä esimerkiksi hintaohjaus, aikaohjaus, prioriteetti ja muut ohjauskohtaiset asetukset.
+5. Tallenna asetukset.
+
+Lämmitykseen liittyvät asetukset ja aurinkosähkön hyödyntäminen ohjauksessa kuvataan omissa ohjeissaan.

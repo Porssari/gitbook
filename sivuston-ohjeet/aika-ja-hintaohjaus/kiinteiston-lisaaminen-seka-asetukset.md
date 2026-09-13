@@ -1,7 +1,13 @@
-# Kiinteistön lisääminen sekä asetukset
+# Käyttöpaikan lisääminen sekä asetukset
 
-Ohjausasetusten lisääminen aloitetaan lisäämällä käyttäjätunnukselle kiinteistö Ohjausasetukset-osiossa. Kiinteistön pääsulakekoko valitaan sähköliittymän mittarikeskuksen pääsulakekoon perusteella. Mikäli sinulla on tarkoitus hyödyntää aurinkosähköohjausta tai ulkolämpötilaennusteen perusteella laskettavaa ohjausta, kannatta jo tässä vaiheessa lisätä kiinteistön sijaintikoordinaatit. Koordinaatit löytää esimerkiksi Google Maps -palvelun avulla.
+Ohjausasetusten tekeminen aloitetaan lisäämällä käyttäjätilille **käyttöpaikka** Asetukset-näkymässä.
 
-Kun olet lisännyt kiinteistön, voit halutessasi lisätä mukautetut hinta-asetukset. Mikäli sinulla on käytössä kiinteä sähkön siirtotariffi, ei mukautettuja hinta-asetuksia ole välttämätöntä käyttää. Tällöin  sähkön tuntihintana käytetään verollista spot-hintaa ilman myyjäyhtiön marginaalia. Mikäli sinulla on käytössä vaihtuva tariffi, esimerkiksi aikasähkö tai kausisähkö, on hyödyllistä syöttää omat hinta-asetukset. Tällöin ohjausasetuksissa käytetään sähkön kokonaishintaa, mikä on hyvä huomioida hintarajoja asetettaessa.
+1. Avaa sovellus osoitteessa [https://porssari.fi/app/](https://porssari.fi/app/).
+2. Siirry **Asetukset**-näkymään.
+3. Lisää uusi käyttöpaikka.
+4. Valitse pääsulakekoko sähköliittymän mittarikeskuksen pääsulakekoon perusteella.
+5. Lisää sijaintikoordinaatit, jos aiot käyttää aurinkosähköohjausta tai ulkolämpötilaennusteeseen perustuvaa ohjausta. Koordinaatit löytyvät esimerkiksi Google Mapsista.
 
-Mikäli käytössäsi on aurinkovoimala ja haluat käyttää aurinkosähköennusteeseen perustuvaa ohjausta, voi lisätä kiinteistöön Aurinkosähköjärjestelmiä. Jokaisen paneelikentän voi syöttää erillisenä aurinkovoimalana jolloin päästään parhaaseen ennustetarkkuuteen.
+Kun käyttöpaikka on lisätty, voit tarvittaessa määritellä hinta-asetukset. Jos käytössäsi on kiinteä sähkön siirtotariffi, mukautettuja hinta-asetuksia ei ole välttämätöntä käyttää. Tällöin sähkön tuntihintana käytetään verollista spot-hintaa ilman myyjäyhtiön marginaalia. Jos käytössäsi on vaihtuva tariffi, esimerkiksi aikasähkö tai kausisähkö, omat hinta-asetukset ovat hyödyllisiä. Tällöin ohjauksissa käytetään sähkön kokonaishintaa, mikä kannattaa huomioida hintarajoja asetettaessa.
+
+Jos käytössäsi on aurinkovoimala ja haluat käyttää aurinkosähköennusteeseen perustuvaa ohjausta, lisää käyttöpaikkaan aurinkosähköjärjestelmä. Jokaisen paneelikentän voi syöttää erillisenä järjestelmänä, jolloin ennustetarkkuus on paras.

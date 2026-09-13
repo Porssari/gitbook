@@ -7,7 +7,9 @@ coverY: 0
 
 Pörssäri on helppokäyttöinen ohjauspalvelu kodin sähkölaitteiden ohjaukseen pörssisähkön hinnan, ulkolämpötilaennusteen sekä aurinkopaneeleiden tuotantoennusteen perusteella.
 
-Sähkön day-ahead -hintatiedot ovat NordPoolin omistamaa lisenssinalaista dataa, ja niiden uudelleenjakaminen ilman asianmukaista lisenssiä on kielletty. Pörssäri on selvittänyt yhdessä NordPoolin kanssa, että palvelu nykymuodossaan on vaatimusten mukainen, ja sitä voidaan ilmaispalveluna tarjota ilman hintatietojen uudelleenjakamislisenssiä.
+Ohjaussovellus löytyy osoitteesta [https://porssari.fi/app/](https://porssari.fi/app/).
+
+Sähkön day-ahead -hintatiedot ovat Nord Poolin omistamaa lisenssinalaista dataa, ja niiden uudelleenjakaminen ilman asianmukaista lisenssiä on kielletty. Pörssäri on selvittänyt yhdessä Nord Poolin kanssa, että palvelu nykymuodossaan on vaatimusten mukainen, ja sitä voidaan ilmaispalveluna tarjota ilman hintatietojen uudelleenjakamislisenssiä.
 
 Pörssärin käyttöönotto onnistuu helpoiten Shelly-älyreleen avulla. Luotettavia suomalaisia verkkokauppoja Shellyn hankintaan ovat esimerkiksi [Nurkan Takaa -verkkokauppa](https://verkkokauppa.nurkantakaa.fi/) sekä [Shellykauppa.fi](https://shellykauppa.fi). Edellämainitut kauppiaat tarjoavat myös apua oikean Shelly-releen valintaan, ja skriptien esiasennus on myös osin mahdollista ostaa tuotteen mukana.
 
@@ -17,4 +19,4 @@ Yhteensopivia malleja Pörssärin kanssa ovat kaikki Shelly Plus, Shelly Pro, Sh
 
 Lisäksi tarvitset sähköasentajan kytkemään Shellyn paikalleen mikäli et ostanut asennusvalmista ratkaisua releitä hankkiessa.
 
-Shellyn lisäksi tällä hetkellä tuettuna on Home Assistant sekä Raspberry Pico W -releohjaus Micropython-pohjaisella järjestelmällä. Ulkoisista ohjauspalveluista tuettuina on ilmalämpöpumpun ohjaus Sensibo-ohjauslaitetta hyödyntäen sekä Themo-lattialämmitystermostaattien ohjaus.
+Shellyn lisäksi tuettuna on Home Assistant sekä Raspberry Pico W -releohjaus Micropython-pohjaisella järjestelmällä. Pilvipalveluista tuettuina ovat esimerkiksi Sensibo ja Themo. Muita pilvipalveluita voi olla saatavilla esikatseluominaisuuksina.
